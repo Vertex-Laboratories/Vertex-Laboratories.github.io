@@ -43,7 +43,7 @@ body { font-family: 'montserrat-regular', Helvetica, Arial, sans-serif; font-siz
 
 body.fade .intro__center, body.fade .intro__footer, body.fade .header, body.fade .pagination { transition: opacity 1s linear; opacity: 0; }
 
-body.fade .intro {background-image: url("../img/Cube-Math-HD-Wallpaper.png"); background-size: 100% 100%;}
+body.fade .intro {background-image: url("../img/Cube-Math-HD-Wallpaper.png") background-size: 100% 100%;}
 
 body.fade .intro__footer, body.fade .header, body.fade .pagination { transition-delay: 0.5s; transition-delay: 0.5s; }
 
