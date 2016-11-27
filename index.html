@@ -30,7 +30,11 @@
         </symbol>
         
         <symbol id="circle-icon" viewBox="0 0 32 32">
-          <path class="path1" d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 28c-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12s-5.373 12-12 12z"></path>
+          <path class="path1" d="M29.555 11.501l-14-9.333c-0.336-0.224-0.774-0.224-1.109 0l-14 9.333c-0.278 0.185-0.445 0.498-0.445 0.832v9.333c0 0.334 0.167 0.647 0.445 0.832l14 9.333c0.168 0.112 0.361 0.168 0.555 0.168s0.387-0.056 0.555-0.168l14-9.333c0.278-0.185 0.445-0.498 0.445-0.832v-9.333c0-0.334-0.167-0.647-0.445-0.832zM15 20.465l-5.197-3.465 5.197-3.465 5.197 3.465-5.197 3.465zM16 11.798v-6.93l11.197 7.465-5.197 3.465-6-4zM14 11.798l-6 4-5.197-3.465 11.197-7.465v6.93zM6.197 17l-4.197 2.798v-5.596l4.197 2.798zM8 18.202l6 4v6.93l-11.197-7.465 5.197-3.465zM16 22.202l6-4 5.197 3.465-11.197 7.465v-6.93zM23.803 17l4.197-2.798v5.596l-4.197-2.798z"></path>
+        </symbol>    
+    
+        <symbol id="mouse-icon" viewBox="0 0 24 24">
+         <path class="path1" d="M11.016 1.078v7.922h-7.031c0-4.078 3.094-7.453 7.031-7.922zM3.984 15v-3.984h16.031v3.984c0 4.406-3.609 8.016-8.016 8.016s-8.016-3.609-8.016-8.016zM12.984 1.078c3.938 0.469 7.031 3.844 7.031 7.922h-7.031v-7.922z"></path>
         </symbol>    
     </svg>
      <!--END SVG-->
@@ -55,7 +59,21 @@
 
         <div class="header__right">
 
+<!-- THIS IS THE MOUSEOVER CODE
+    <div class="container demo-1">
+      <div class="content">
+        <div id="large-header" class="large-header">
+          <canvas id="demo-canvas"></canvas>
+          <h1 class="main-title">Vertex Labs</h1>
+        </div>
+      </div>
+    </div>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/rAF.js"></script>
+    <script src="js/demo-1.js"></script>
 
+    END MOUSEOVER CODE -->
 
           <!-- BEGIN links -->
           <ul class="links">
@@ -140,27 +158,10 @@
             </svg>
             <div class="intro">
               <div class="intro__center">
-
-                <div class="intro__triangle">
-
-                  <svg class="svg-icon svg-triangle">
-                    <use xlink:href="img/sprite.svg#svg-triangle"></use>
-                  </svg>
-
-                </div>
-
                 <div class="parallax">
                   <div class="parallax__inner">
                     <div class="parallax__layer parallax__layer-1">
                       <div class="parallax__row">
-
-                        <svg class="svg-icon svg-char_c char char-placeholder">
-                          <use xlink:href="img/sprite.svg#svg-char_c"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char_o char char-placeholder">
-                          <use xlink:href="img/sprite.svg#svg-char_o"></use>
-                        </svg>
 
                         <svg class="svg-icon svg-char_m2 char">
                           <use xlink:href="img/sprite.svg#svg-char_m2"></use>
@@ -170,24 +171,8 @@
                           <use xlink:href="img/sprite.svg#svg-char_i"></use>
                         </svg>
 
-                        <svg class="svg-icon svg-char_n2 char char-placeholder">
-                          <use xlink:href="img/sprite.svg#svg-char_n2"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char_g char char-placeholder">
-                          <use xlink:href="img/sprite.svg#svg-char_g"></use>
-                        </svg>
-
                       </div>
                       <div class="parallax__row parallax__row_2">
-
-                        <svg class="svg-icon svg-char_s char char-placeholder">
-                          <use xlink:href="img/sprite.svg#svg-char_s"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char_o char char-placeholder">
-                          <use xlink:href="img/sprite.svg#svg-char_o"></use>
-                        </svg>
 
                         <svg class="svg-icon svg-char_o char">
                           <use xlink:href="img/sprite.svg#svg-char_o"></use>
@@ -291,7 +276,7 @@
                 </div>
 
                 <div class="intro__main-text">
-                  <h1 class="h1">We obsess about your <br>product as much as you <br>do – actually more.</h1>
+                  <h1 class="h1">We give your product <br>as much intelligence <br>as your team.</h1>
 
                   <a href="#qmedic" class="btn btn_light">
 
@@ -315,7 +300,7 @@
                   <span class="scroll-down__alt-text">Keep Scrolling</span>
 
                   <svg class="svg-icon svg-mouse">
-                    <use xlink:href="img/sprite.svg#svg-mouse"></use>
+                    <use xlink:href="#mouse-icon"></use>
                   </svg>
 
                 </div>

@@ -132,7 +132,7 @@ body.mobile .header { background: black; }
 
 .svg-back_a { width: 0.9534883720930233em; height: 1em; fill: #E46363; }
 
-.svg-instagram { width: 1em; height: 1em; fill: #4A4A4A; }
+.svg-linkedin { width: 1em; height: 1em; fill: #4A4A4A; }
 
 .svg-char_c { width: 0.9230769230769231em; height: 1em; fill: #FFF; }
 
@@ -156,7 +156,7 @@ body.mobile .header { background: black; }
 
 .svg-circle { width: 1em; height: 1em; fill: #E46363; }
 
-.svg-linkedin { width: 1em; height: 1em; fill: #4A4A4A; }
+.svg-instagram { width: 1em; height: 1em; fill: #4A4A4A; }
 
 .svg-front_a { width: 0.9534883720930233em; height: 1em; fill: #E46363; }
 
@@ -307,10 +307,6 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; /*A
 .char-shadow:before { content: ""; position: absolute; z-index: 0; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-size: cover; height: 1.3em; width: 1.3em; }
 
 .char-shadow .svg-icon { font-size: inherit; position: relative; z-index: 1; }
-
-.char-shadow-a:before { background-image: url("../img/char-a-only-shadow.png"); height: 1.35599em; width: 1.31127em; }
-
-.char-shadow-o:before { background-image: url("../img/char-o-only-shadow.png"); height: 1.74026em; width: 1.7987em; }
 
 .scroll-down { display: inline-block; font-family: "montserrat-light"; font-weight: normal; font-size: 13px; letter-spacing: 0.2em; min-width: 200px; font-size: 10px; color: #FFF; text-align: center; text-transform: uppercase; cursor: pointer; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
 
