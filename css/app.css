@@ -394,7 +394,7 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; /*A
 
 .project__figure { float: left; width: 60%; position: relative; z-index: 1; box-sizing: border-box; }
 
-.project__image { display: block; max-width: 100%; margin: auto; position: absolute; top: -60px; top: -5vh; }
+.project__image { display: block; max-width: 90%; margin: auto; position: absolute; top: -60px; top: -5vh; }
 
 @media only screen and (min-height: 800px) { .project__image { top: -9.2vh; } }
 
@@ -404,7 +404,7 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; /*A
 
 @media only screen and (min-width: 1680px) { .qmedic-interface { max-width: none; } }
 
-@media only screen and (min-width: 1680px) { .rex-pro-interface { left: -100px; } }
+@media only screen and (min-width: 1680px) { .rex-pro-interface { left: -100px; border-radius: 3% } }
 
 .project__about { float: right; width: 40%; padding: 0 0 0 70px; position: relative; z-index: 0; box-sizing: border-box; }
 
