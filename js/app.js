@@ -205,9 +205,9 @@
             value: !0
         }), n.animations = void 0, n.setAnimationsProgress = i;
         var o = e("./animations-base"),
-            r = $(".project[data-animations=qmedic]"),
-            a = $(".project[data-animations=milkyway]"),
-            s = $(".project[data-animations=rexpro]"),
+            r = $(".project[data-animations=about]"),
+            a = $(".project[data-animations=research]"),
+            s = $(".project[data-animations=consulting]"),
             u = new TimelineMax({
                 paused: !0
             }),
@@ -232,19 +232,19 @@
             yPercent: 0,
             opacity: 1,
             ease: d
-        }, "-=0.2").add((0, o.createAboutAnimFor)(r), "-=0.5"), l.add((0, o.createHeadingAnimFor)(a)).add([TweenMax.fromTo(a.find(".milkyway"), .6, {
+        }, "-=0.2").add((0, o.createAboutAnimFor)(r), "-=0.5"), l.add((0, o.createHeadingAnimFor)(a)).add([TweenMax.fromTo(a.find(".research"), .6, {
             yPercent: 150,
             opacity: 0
         }, {
             yPercent: 0,
             opacity: 1,
             ease: d
-        }), TweenMax.fromTo(a.find(".milkyway__layer-0"), .6, {
+        }), TweenMax.fromTo(a.find(".research__layer-0"), .6, {
             x: 200
         }, {
             x: 0,
             ease: d
-        }), TweenMax.fromTo(a.find(".milkyway__layer-2"), .3, {
+        }), TweenMax.fromTo(a.find(".research__layer-2"), .3, {
             x: -200,
             opacity: 0
         }, {
@@ -252,7 +252,7 @@
             delay: .3,
             opacity: 1,
             ease: d
-        }), TweenMax.fromTo(a.find(".bg-milkyway__layer-1"), .3, {
+        }), TweenMax.fromTo(a.find(".bg-research__layer-1"), .3, {
             xPercent: 100,
             opacity: 0
         }, {
@@ -260,7 +260,7 @@
             delay: .3,
             opacity: 1,
             ease: d
-        }), TweenMax.fromTo(a.find(".milkyway__layer-1"), .3, {
+        }), TweenMax.fromTo(a.find(".research__layer-1"), .3, {
             yPercent: 100,
             opacity: 0
         }, {
@@ -268,14 +268,14 @@
             delay: .5,
             opacity: 1,
             ease: d
-        })]).add([TweenMax.fromTo(a.find(".bg-milkyway__layer-2"), .4, {
+        })]).add([TweenMax.fromTo(a.find(".bg-research__layer-2"), .4, {
             yPercent: 100,
             opacity: 0
         }, {
             yPercent: 0,
             opacity: 1,
             ease: d
-        }), (0, o.createAboutAnimFor)(a)], "-=0.3"), c.add((0, o.createHeadingAnimFor)(s)).addLabel("begin", 0).fromTo(s.find(".bg-rex-pro__layer-2"), .6, {
+        }), (0, o.createAboutAnimFor)(a)], "-=0.3"), c.add((0, o.createHeadingAnimFor)(s)).addLabel("begin", 0).fromTo(s.find(".bg-consulting__layer-2"), .6, {
             xPercent: -100
         }, {
             xPercent: 0,
@@ -287,16 +287,16 @@
             yPercent: 0,
             opacity: 1,
             ease: d
-        }, "begin+=0.2").fromTo(s.find(".bg-rex-pro__layer-3"), .6, {
+        }, "begin+=0.2").fromTo(s.find(".bg-consulting__layer-3"), .6, {
             opacity: 0
         }, {
             opacity: 1,
             ease: d
         }, "begin+=0.5").add((0, o.createAboutAnimFor)(s), "begin+=0.5");
         var f = n.animations = {
-            qmedic: u,
-            milkyway: l,
-            rexpro: c
+            about: u,
+            research: l,
+            consulting: c
         }
     }, {
         "./animations-base": 2
@@ -313,7 +313,7 @@
             e.fullpage({
                 verticalCentered: !1,
                 scrollingSpeed: 700,
-                anchors: ["intro", "qmedic", "milkyway", "rexpro"],
+                anchors: ["intro", "about", "research", "consulting"],
                 autoScrolling: !0,
                 scrollBar: !1,
                 fixedElements: null,
@@ -459,7 +459,7 @@
                 _ = c.find(".parallax__layer-static"),
                 y = c.find(".intro__main-text"),
                 h = y.find(".btn"),
-                g = c.find(".intro__triangle .svg-icon"),
+                g = c.find(".intro__arrow .svg-icon"),
                 b = new TimelineMax({
                     paused: !0
                 }),
