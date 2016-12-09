@@ -1,541 +1,70 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset="utf-8">
-    <title>Vertex Labs</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="theme-color" content="#fff">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" media="all" href="css/app.css">
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
-    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
-
-  </head>
-
-  <body class="fade">
-
-
-
-     <!-- BEGIN SVGS DEFINITIONS-->
-<svg style="display:none;">
-
-    <symbol id="svg-back_a" viewBox="0 0 533 559">
-        <path class="path1" d="M17.307 2.853c-0.027 0.133 0 0.48 0.027 0.8 0.027 0.613 0.027 0.613-4.187 0.613-4.453 0-5.253 0.16-4.613 0.933 0.293 0.347 0.907 0.427 3.893 0.373 1.947 0 3.68 0.053 3.84 0.16 0.187 0.107 0.24 0.48 0.16 0.827-0.107 0.373-0.053 0.64 0.107 0.64 0.4 0 2.667-1.92 2.667-2.24 0-0.373-1.36-2.293-1.627-2.293-0.133 0-0.24 0.080-0.267 0.187z"></path>
-        <path class="path2" d="M2.267 10.373c-0.107 0.213 4.453 9.813 5.787 12.16 0.16 0.293 0.933 1.813 1.733 3.387 1.013 2.080 1.547 2.88 1.893 2.88 0.373 0 1.147-1.28 3.093-5.253 1.44-2.907 2.72-5.467 2.827-5.68 0.24-0.4 0.64-1.227 1.92-3.813 0.347-0.72 0.827-1.68 1.067-2.133 1.013-1.893 1.547-1.787-8.827-1.787-5.493 0-9.387 0.107-9.493 0.24zM19.093 12.4c0.107 0.24-0.933 2.613-2.4 5.493-1.413 2.8-2.56 5.2-2.56 5.333 0 0.507-1.36 2.373-1.733 2.373-0.453 0-6.933-12.907-6.667-13.307 0.107-0.187 2.347-0.293 6.693-0.293 5.6 0 6.533 0.053 6.667 0.4z" fill-rule="evenodd"></path></symbol>
-    
-    <symbol id="svg-char_c" viewBox="0 0 144 156">
-        <path d="M81.532 0C35.098 0 0 33.136 0 77.172c0 44.69 34.226 78.48 80.224 78.48 22.454 0 46.652-11.118 63.002-27.904l-22.672-23.98c-10.682 10.9-25.506 17.876-38.368 17.876-24.198 0-42.51-19.402-42.51-44.908 0-25.07 18.312-44.254 42.51-44.254 13.516 0 28.34 7.63 38.368 19.838l22.454-26.596C127.748 10.028 104.204 0 81.532 0z" fill-rule="evenodd"></path></symbol> 
-    
-    <symbol id="svg-char_g" viewBox="0 0 148 156">
-        <path d="M111.998 76.3v39.458c-9.156 4.578-19.184 7.412-27.032 7.412-25.288 0-44.69-19.62-44.69-45.562 0-25.506 19.184-45.126 44.254-45.126 14.17 0 29.648 6.322 40.766 16.568l21.8-26.378C131.4 8.72 107.42 0 84.748 0 36.57 0 .6 33.354.6 77.608c0 44.472 35.098 78.044 81.532 78.044 21.364 0 47.088-8.284 63.438-19.838V76.3h-33.572z" fill-rule="evenodd"></path></symbol> 
-    
-    <symbol id="svg-char_i" viewBox="0 0 39 153">
-        <path d="M38.804 152.6V0H0v152.6h38.804z" fill-rule="evenodd"></path></symbol> 
-    
-    <symbol id="svg-char_m" viewBox="0 0 168 153">
-        <path d="M167.642 152.818V0H125.35L83.93 90.906 42.51 0H0v152.818h34.662v-99.19l36.624 83.93h25.288l36.624-83.93.218 99.19h34.226z" fill-rule="evenodd"></path></symbol> 
-    
-    <symbol id="svg-char_m2" viewBox="0 0 84 153">
-        <path d="M83.93 90.906L42.51 0H0v152.818h34.662v-99.19l36.624 83.93L83.93 90.906z" fill-rule="evenodd"></path></symbol> 
-    
-    <symbol id="svg-char_n" viewBox="0 0 141 153">
-      <path d="M140.828 152.6V0H104.64v94.176L34.226 0H0v152.6h36.406V58.642l70.196 93.958h34.226z" fill-rule="evenodd"/>
-    
-    <symbol id="svg-char_o" viewBox="0 0 166 156">
-        <path d="M82.404 0C35.316 0 0 32.918 0 77.39c0 44.69 35.316 78.262 82.404 78.262 47.306 0 82.622-33.79 82.622-78.262C165.026 33.136 129.71 0 82.404 0zm.436 32.482c23.544 0 42.292 19.402 42.292 45.126 0 25.724-18.748 45.562-42.292 45.562-23.326 0-43.164-19.838-43.164-45.562 0-25.724 19.62-45.126 43.164-45.126z" fill-rule="evenodd"></path></symbol> 
-    
-    <symbol id="svg-char_o2" viewBox="0 0 166 156">
-        <path d="M47.115 117.568c6.2 3.584 13.285 5.602 20.725 5.602 23.544 0 42.292-19.838 42.292-45.562 0-25.724-18.748-45.126-42.292-45.126-22.905 0-42.096 18.363-43.12 43.046L.75 30.54C15.47 11.686 39.347 0 67.404 0c47.306 0 82.622 33.136 82.622 77.39 0 44.472-35.316 78.262-82.622 78.262-8.952-16.805-15.5-29.095-20.29-38.084z" fill-rule="evenodd"></path></symbol> 
-    
-    <symbol id="svg-char_s" viewBox="0 0 131 156">
-        <path d="M70.196 0C33.572 0 9.374 17.876 9.374 45.998c0 54.064 80.66 37.932 80.66 64.964 0 8.72-7.63 13.298-19.838 13.298-15.914 0-39.458-9.156-55.154-22.89L0 131.236c18.094 14.824 44.254 24.416 69.76 24.416 34.008 0 61.04-16.132 61.04-46.652 0-55.154-80.66-40.112-80.66-66.49 0-7.412 6.758-11.118 16.786-11.118 12.426 0 32.7 6.54 48.832 15.914l14.606-30.302C114.668 6.758 92.214 0 70.196 0z" fill-rule="evenodd"></path></symbol> 
-    
-    <symbol id="svg-circle" viewBox="0 0 46 46">
-        <path d="M23 46c12.703 0 23-10.297 23-23S35.703 0 23 0 0 10.297 0 23s10.297 23 23 23zm0-8c-8.284 0-15-6.716-15-15 0-8.284 6.716-15 15-15 8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15z" fill-rule="evenodd"></path></symbol> 
-    
-    <symbol id="svg-front_a" viewBox="0 0 533 559">
-        <path d="M166.365 512.41H379.32l19.96 46.58h133.09L266.19 0 0 559h133.09l33.275-46.59zm53.237-119.786l53.236-106.472 53.236 106.472H219.602z" fill-rule="evenodd"></path></symbol> 
-    
-    <symbol id="svg-arrow" viewBox="0 0 30 30">
-        <path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z" fill-rule="evenodd"></path></symbol>
-
-    <symbol id="mouse-icon" viewBox="0 0 43 62">
-        <path d="M1.67 28.203h38.677v12.992c0 10.422-8.61 18.782-19.336 18.782-10.725 0-19.34-8.356-19.34-18.782V28.203zM20.92 7.563c-.418.058-.747.44-.747.855v11.426c0 .44.42.855.865.855.418 0 .836-.415.836-.856V8.418c0-.473-.476-.918-.952-.855zm.12-5.848c1.997 0 3.934.265 5.782.828.27.09.566.176.863.297h.028c.27.117.536.207.836.324 0 0 0 .03.032.03.265.12.566.208.836.326 0 .03 0 .03.027.03.27.15.536.266.806.384 0 .03.027.03.027.03.27.15.508.266.773.415v.03c.27.15.536.324.774.473l.03.03c.24.177.505.325.743.5v.032c.24.176.508.325.715.5l.03.032c.24.207.478.382.685.59 0 0 .03 0 .03.03.208.176.42.383.626.59 0 0 .03 0 .03.032.208.206.418.413.594.62.028 0 .028 0 .028.03.21.208.418.415.593.65.032 0 .032 0 .032.03.207.208.36.442.535.68 0 0 .027 0 .027.032.18.207.358.472.534.71v.032c.18.238.328.473.477.738.032 0 .032 0 .032.03.15.236.297.5.445.74 0 .03.032.03.032.03.147.267.264.532.385.798h.032c.117.265.238.562.36.828v.03c.116.267.237.532.358.83.743 2.007 1.16 4.19 1.16 6.495v6.055H1.7v-6.086c0-10.39 8.58-18.777 19.34-18.777zm-.867-1.68C8.94.445 0 9.422 0 20.492v20.7C0 52.5 9.386 61.624 21.007 61.624c11.62 0 21.008-9.125 21.008-20.434V27.61c.03-.06.03-.15.03-.24v-6.878c0-2.125-.358-4.164-.983-6.113-.09-.298-.18-.622-.297-.946h-.027c-.117-.325-.21-.59-.328-.887l-.028-.03c-.152-.298-.27-.622-.418-.888v-.032c-.152-.293-.328-.59-.476-.887-.18-.296-.328-.59-.508-.855s-.36-.562-.535-.828l-.027-.03c-.18-.24-.36-.505-.536-.77l-.03-.032c-.208-.238-.388-.472-.595-.738h-.027c-.21-.266-.418-.5-.63-.738-.026 0-.026-.033-.026-.033-.24-.238-.45-.44-.656-.68-.032 0-.032-.03-.032-.03-.238-.207-.476-.442-.715-.65 0 0-.026 0-.026-.03-.238-.207-.476-.414-.746-.62v-.032c-.266-.208-.504-.383-.773-.563l-.028-.03c-.27-.177-.535-.384-.804-.564h-.028c-.27-.175-.535-.355-.804-.5-.027 0-.027-.03-.027-.03-.297-.177-.594-.325-.863-.474-.027 0-.027-.03-.027-.03-.297-.15-.567-.298-.864-.442-.028 0-.028-.032-.028-.032-.297-.117-.594-.238-.895-.355-.03 0-.03-.03-.03-.03-.298-.118-.626-.24-.954-.325 0-.032 0-.032-.027-.032-.297-.117-.63-.234-.953-.324-1.7-.53-3.516-.828-5.395-.914L20.17.035z" fill-rule="evenodd"></path></symbol> 
-    
-    <symbol id="angelist-icon" viewBox="0 0 32 32">
-        <path class="path1" d="M14.748 13.289c0.104-0.043 0.247-0.064 0.427-0.064 0.057 0 0.171 0.005 0.341 0.014s0.45 0.033 0.84 0.071l-1.537-4.44c-0.399-1.129-0.707-1.866-0.925-2.213s-0.455-0.519-0.712-0.519c-0.199 0-0.361 0.076-0.484 0.228s-0.185 0.356-0.185 0.612c0 0.437 0.166 1.195 0.498 2.277s0.83 2.5 1.494 4.255c0.057-0.104 0.137-0.178 0.242-0.221z"></path>
-        <path class="path2" d="M16.455 19.017c0.228-0.285 0.467-0.543 0.719-0.776s0.514-0.439 0.79-0.619c-0.408-0.019-0.795-0.062-1.16-0.128s-0.714-0.161-1.046-0.285c0.152 0.304 0.287 0.607 0.406 0.911s0.216 0.603 0.292 0.897z"></path>
-        <path class="path3" d="M21.607 15.374c-0.389-0.322-1.146-0.612-2.27-0.868s-2.298-0.384-3.522-0.384c-0.341 0-0.583 0.057-0.726 0.171s-0.213 0.308-0.213 0.583c0 0.645 0.361 1.112 1.082 1.402s1.888 0.434 3.501 0.434h0.583c0.133 0 0.24 0.050 0.32 0.149s0.135 0.249 0.164 0.448c-0.162 0.152-0.493 0.325-0.996 0.519s-0.887 0.387-1.153 0.576c-0.569 0.418-1.027 0.913-1.373 1.487s-0.519 1.117-0.519 1.63c0 0.313 0.073 0.69 0.221 1.131s0.221 0.714 0.221 0.818v0.1l-0.028 0.128c-0.418-0.028-0.747-0.273-0.989-0.733s-0.363-1.074-0.363-1.843v-0.128c-0.076 0.066-0.149 0.114-0.221 0.142s-0.149 0.043-0.235 0.043c-0.085 0-0.166-0.007-0.242-0.021s-0.161-0.036-0.256-0.064c0.028 0.105 0.050 0.206 0.064 0.306s0.021 0.178 0.021 0.235c0 0.351-0.138 0.652-0.413 0.904s-0.603 0.377-0.982 0.377c-0.598 0-1.205-0.292-1.822-0.875s-0.925-1.155-0.925-1.715c0-0.104 0.012-0.197 0.036-0.277s0.064-0.149 0.121-0.206c0.133 0.161 0.318 0.398 0.555 0.712 0.626 0.863 1.205 1.295 1.736 1.295 0.18 0 0.341-0.057 0.484-0.171s0.213-0.233 0.213-0.356c0-0.142-0.095-0.379-0.285-0.712s-0.451-0.707-0.783-1.124c-0.38-0.484-0.695-0.837-0.946-1.060s-0.453-0.334-0.605-0.334c-0.332 0-0.638 0.178-0.918 0.534s-0.42 0.776-0.42 1.259c0 0.389 0.097 0.823 0.292 1.302s0.477 0.961 0.847 1.444c0.56 0.75 1.255 1.326 2.085 1.729s1.748 0.605 2.754 0.605c1.85 0 3.399-0.69 4.646-2.070s1.871-3.11 1.871-5.187c0-0.635-0.048-1.141-0.142-1.516s-0.251-0.648-0.47-0.818z"></path>
-        <path class="path4" d="M12.898 18.405c0.417 0.56 0.811 0.996 1.181 1.309s0.664 0.47 0.882 0.47c0.161 0 0.308-0.073 0.441-0.221s0.199-0.306 0.199-0.477c0-0.18-0.13-0.6-0.391-1.26s-0.586-1.307-0.975-1.943c-0.285-0.474-0.564-0.832-0.84-1.075s-0.536-0.363-0.783-0.363c-0.199 0-0.42 0.126-0.662 0.377s-0.363 0.486-0.363 0.704c0 0.228 0.119 0.569 0.356 1.025s0.555 0.939 0.954 1.452z"></path>
-        <path class="path5" d="M16 0c-8.837 0-16 7.163-16 15.999s7.164 16.001 16 16.001c8.836 0 16-7.164 16-16.001s-7.164-15.999-16-15.999zM21.059 23.635c-1.437 1.523-3.276 2.284-5.514 2.284-0.882 0-1.739-0.159-2.569-0.477s-1.544-0.761-2.142-1.331c-0.683-0.626-1.195-1.288-1.537-1.985s-0.512-1.411-0.512-2.142c0-0.816 0.175-1.447 0.527-1.893s0.906-0.749 1.665-0.911c-0.142-0.332-0.247-0.612-0.313-0.84s-0.1-0.403-0.1-0.527c0-0.427 0.225-0.863 0.676-1.309s0.875-0.669 1.274-0.669c0.171 0 0.351 0.031 0.541 0.093s0.408 0.164 0.655 0.306c-0.731-2.068-1.262-3.665-1.594-4.789s-0.498-1.9-0.498-2.327c0-0.588 0.152-1.055 0.455-1.402s0.716-0.519 1.238-0.519c0.892 0 2.021 1.992 3.387 5.977 0.237 0.683 0.417 1.21 0.541 1.58 0.104-0.294 0.251-0.712 0.441-1.252 1.366-3.947 2.542-5.92 3.529-5.92 0.484 0 0.87 0.164 1.16 0.491s0.434 0.766 0.434 1.316c0 0.418-0.159 1.181-0.477 2.291s-0.799 2.562-1.444 4.355c0.854 0.161 1.456 0.522 1.807 1.082s0.527 1.442 0.527 2.647c-0 2.391-0.719 4.348-2.156 5.87z"></path>
-        <path class="path6" d="M21.344 9.518c0.356-1.124 0.534-1.814 0.534-2.071 0-0.275-0.059-0.489-0.178-0.64s-0.282-0.228-0.491-0.228c-0.266 0-0.536 0.221-0.811 0.662s-0.579 1.151-0.911 2.128l-1.423 4.113 1.793 0.313c0.635-1.727 1.131-3.152 1.487-4.277z"></path>
-        </symbol>
-    
-    <symbol id="linkedin-icon" viewBox="0 0 32 32">
-          <path d="M16 0.64c-8.483 0-15.36 6.877-15.36 15.36s6.877 15.36 15.36 15.36 15.36-6.877 15.36-15.36-6.877-15.36-15.36-15.36zM12.24 22.366h-3.11v-10.010h3.11v10.010zM10.666 11.128c-0.982 0-1.618-0.696-1.618-1.557 0-0.878 0.654-1.554 1.658-1.554s1.618 0.675 1.637 1.554c0 0.861-0.634 1.557-1.677 1.557zM23.6 22.366h-3.11v-5.547c0-1.291-0.451-2.168-1.576-2.168-0.859 0-1.37 0.594-1.595 1.165-0.083 0.203-0.104 0.491-0.104 0.778v5.771h-3.112v-6.816c0-1.25-0.040-2.294-0.082-3.194h2.702l0.142 1.39h0.062c0.41-0.653 1.413-1.616 3.091-1.616 2.046 0 3.581 1.371 3.581 4.318v5.918z" fill-rule="evenodd"></path></symbol>
-
-    <symbol id="mail-icon" viewBox="0 0 32 32">
-        <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM8 8h16c0.286 0 0.563 0.061 0.817 0.177l-8.817 10.286-8.817-10.287c0.254-0.116 0.531-0.177 0.817-0.177zM6 22v-12c0-0.042 0.002-0.084 0.004-0.125l5.864 6.842-5.8 5.8c-0.045-0.167-0.069-0.34-0.069-0.517zM24 24h-16c-0.177 0-0.35-0.024-0.517-0.069l5.691-5.691 2.826 3.297 2.826-3.297 5.691 5.691c-0.167 0.045-0.34 0.069-0.517 0.069zM26 22c0 0.177-0.024 0.35-0.069 0.517l-5.8-5.8 5.865-6.842c0.003 0.041 0.004 0.083 0.004 0.125v12z" fill-rule="evenodd"></path></symbol> 
-</svg>
-     <!--END SVG DEFINITIONS-->
-
-
-    <!-- BEGIN content -->
-    <div class="out">
-
-      <!-- BEGIN header -->
-      <header class="header">
-        <div class="header__left">
-          <a href="#intro" class="header__link">
-            <svg class="svg-icon svg-circle">
-              <use xlink:href="#svg-circle"></use>
-            </svg>
-          </a>
-        </div>
-
-        <div class="header__right">
-          <!-- BEGIN links -->
-          <ul class="links">
-            <li class="links__item">
-              <a class="links__link" href="https://www.linkedin.com/company/vertex-laboratories" title="LinkedIn" target="_blank">
-
-                <svg class="svg-icon linkedin-icon">
-                  <use xlink:href="#linkedin-icon"></use>
-                </svg>
-
-              </a>
-            </li>
-            <li class="links__item">
-              <a class="links__link" href="https://angel.co/vertex-laboratories" title="angelist" target="_blank">
-
-                <svg class="svg-icon angelist-icon">
-                  <use xlink:href="#angelist-icon"></use>
-                </svg>
-
-              </a>
-            </li>
-            <li class="links__item">
-              <a class="links__link" href="mailto:davdij@vertexlabs.info" title="Send us an email">
-
-                <svg class="svg-icon mail-icon">
-                  <use xlink:href="#mail-icon"></use>
-                </svg>
-
-              </a>
-            </li>
-          </ul>
-          <!-- END links -->
-
-        </div>
-      </header>
-      <!-- END header -->
-
-      <!-- BEGIN pagination (Circle navigation on right) -->
-      <div class="pagination">
-        <nav class="pagination__inner">
-          <a class="pagination__link" href="#intro">
-            <svg width="28" height="28">
-              <circle cx="14" cy="14" r="13"></circle>
-            </svg>
-          </a>
-          <a class="pagination__link" href="#intro">
-            <svg width="28" height="28">
-              <circle cx="14" cy="14" r="13"></circle>
-            </svg>
-          </a>
-          <a class="pagination__link" href="#about">
-            <svg width="28" height="28">
-              <circle cx="14" cy="14" r="13"></circle>
-            </svg>
-          </a>
-          <a class="pagination__link" href="#research">
-            <svg width="28" height="28">
-              <circle cx="14" cy="14" r="13"></circle>
-            </svg>
-          </a>
-          <a class="pagination__link" href="#consulting">
-            <svg width="28" height="28">
-              <circle cx="14" cy="14" r="13"></circle>
-            </svg>
-          </a>
-        </nav>
-      </div>
-      <!-- END pagination -->
-
-      <div id="fullpage">
-        <div class="section section-intro">
-          <div class="section-content">
-            <!-- BEGIN intro -->
-            <svg style="position: absolute; left: -9999px" viewBox="0 0 733 759">
-              <defs>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a-gradient">
-                  <stop stop-color="#FF6363" offset="0%"></stop>
-                  <stop stop-color="#F8393A" offset="100%"></stop>
-                </linearGradient>
-              </defs>
-            </svg>   
-
-            <!--Check out this section-->
-            <div class="intro">
-              <div class="intro__center">
-
-                <div class="intro__arrow">
-
-                  <svg class="svg-icon svg-arrow">
-                    <use xlink:href="#svg-arrow"></use>
-                  </svg>
-
-                </div>
-
-
-<!-- BEGIN PARALLAX-->
-                <div class="parallax">
-                  <div class="parallax__inner">
-
-                  <!-- layer 1 is all placeholders, maybe use later -->
-                    <div class="parallax__layer parallax__layer-1">
-                      <div class="parallax__row">
-
-                        <svg class="svg-icon svg-char char char-placeholder">
-                          <use src="#svg-char_c"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char char char-placeholder">
-                          <use xlink:href="#svg-char_o"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char char char-placeholder">
-                          <use xlink:href="#svg-char_m"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char char char-placeholder">
-                          <use xlink:href="#svg-char_i"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char_n char char-placeholder">
-                          <use xlink:href="#svg-char_n"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char char char-placeholder">
-                          <use xlink:href="#svg-char_g"></use>
-                        </svg>
-
-                      </div>
-                      <div class="parallax__row parallax__row_2">
-
-                        <svg class="svg-icon svg-char char char-placeholder">
-                          <use xlink:href="#svg-char_s"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char char char-placeholder">
-                          <use xlink:href="#svg-char_o"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char char char-placeholder">
-                          <use xlink:href="#svg-char_o"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char char char-placeholder">
-                          <use xlink:href="#svg-char_n"></use>
-                        </svg>
-
-                      </div>
-                    </div>
-
-                    <!-- Layer 2 is the current visible layer-->
-                    <div class="parallax__layer parallax__layer-2">
-                      <div class="parallax__row">
-
-                        <svg class="svg-icon svg-char char">
-                          <use xlink:href="#svg-char_c"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char char">
-                          <use xlink:href="#svg-char_o"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char char">
-                          <use xlink:href="#svg-char_m"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char char">
-                          <use xlink:href="#svg-char_i"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char char">
-                          <use xlink:href="#svg-char_n"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char char">
-                          <use xlink:href="#svg-char_g"></use>
-                        </svg>
-
-                      </div>
-                      <div class="parallax__row parallax__row_2">
-
-                        <svg class="svg-icon svg-char char char-placeholder">
-                          <use xlink:href="#svg-char_s"></use>
-                        </svg>
-
-                      </div>
-                    </div>
-
-                    <div class="parallax__layer parallax__layer-static">
-
-                      <div class="char char-a char-shadow char-shadow-a">
-
-                        <svg class="svg-icon svg-back_a">
-                          <use xlink:href="#svg-back_a"></use>
-                        </svg>
-
-                      </div>
-                      <div class="char char-a char-shadow char-shadow-a">
-
-                        <svg class="svg-icon svg-back_a">
-                          <use xlink:href="#svg-back_a"></use>
-                        </svg>
-
-                      </div>
-                    </div>
-
-                    <div class="parallax__layer parallax__layer-3">
-                      <div class="parallax__row">
-
-                        <svg class="svg-icon svg-char char char-placeholder">
-                          <use xlink:href="#svg-char_c"></use>
-                        </svg>
-
-                      </div>
-                      <div class="parallax__row parallax__row_2">
-
-                        <svg class="svg-icon svg-char char">
-                          <use xlink:href="#svg-char_s"></use>
-                        </svg>
-
-                        <div class="char char-shadow">
-
-                          <svg class="svg-icon svg-char">
-                            <use xlink:href="#svg-char_o"></use>
-                          </svg>
-
-                        </div>
-
-                        <svg class="svg-icon svg-char char">
-                          <use xlink:href="#svg-char_o"></use>
-                        </svg>
-
-                        <svg class="svg-icon svg-char char">
-                          <use xlink:href="#svg-char_n"></use>
-                        </svg>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-<!-- END PARALLAX-->
-
-                <div class="intro__main-text">
-                  <h1 class="h1">We give your product as much intelligence as your team.</h1>
-
-                  <a href="#about" class="btn btn_light">
-
-                    <span class="btn__border">
-  <span class="top"></span>
-                    <span class="right"></span>
-                    <span class="bottom"></span>
-                    <span class="left"></span>
-                    </span>
-                    <span class="btn__text">Learn More</span>
-
-                  </a>
-
-                </div>
-
-              </div>
-
-              <div class="intro__footer">
-                <div class="scroll-down">
-                  <span class="scroll-down__text">Scroll down</span>
-                  <span class="scroll-down__alt-text">Keep Scrolling</span>
-
-                  <svg class="svg-icon mouse-icon">
-                    <use xlink:href="#mouse-icon"></use>
-                  </svg>
-
-                </div>
-              </div>
-            </div>
-            <!-- END intro -->
-
-
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-content">
-            <!-- BEGIN project -->
-            <div class="project-container">
-
-              <div data-animations="about" class="project">
-                <div class="project__bg bg-about"></div>
-                <div class="project__heading">
-                  <h2 class="h2">About</h2>
-                  <h4 class="h4">Overview</h4>
-                </div>
-
-                <div class="project__inner">
-                  <div class="project__figure">
-                    <img class="project__image about-interface" src="img/about.jpg" alt="about Interface">
-                  </div>
-
-                  <div class="project__about">
-                    <h3 class="h3">Our Team</h3>
-                    <div class="project__about-line"></div>
-                    <div class="project__description">
-                      <p>Vertex is a team of engineers, scientists, and entrepreneurs with a shared goal of applying cutting endge research to real world applications. We believe that the complex problems of tomorrow can be solved today through the implementation of creative and innovative approaches given our diverse background in engineering, software, and mathematics. Our team provides meaningful insight and solutions with leaders in business, science, and medicine.</p>
-                    </div>
-
-                    <a href="https://www.http://oratio.ai/" class="btn btn_font-sm" target="_blank">
-
-                      <span class="btn__border">
-                      <span class="top"></span>
-                      <span class="right"></span>
-                      <span class="bottom"></span>
-                      <span class="left"></span>
-                      </span>
-                      <span class="btn__text">Connect With Us</span>
-
-                    </a>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END project -->
-
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-content">
-
-
-            <!-- BEGIN project -->
-            <div class="project-container">
-
-              <div data-animations="research" class="project project-research">
-                <div class="project__bg bg-research">
-                  <div class="bg-research__layer-1"></div>
-                  <div class="bg-research__layer-2"></div>
-                </div>
-                <div class="project__heading">
-                  <h2 class="h2">Research</h2>
-                  <h4 class="h4">Labs</h4>
-                </div>
-                <div class="project__inner">
-
-                  <div class="project__figure">
-                    <div class="research">
-                      <div class="research__layer-0"></div>
-                      <div class="research__layer-1"></div>
-                      <div class="research__layer-2"></div>
-                      <div class="research__layer-3"></div>
-                    </div>
-                  </div>
-
-                  <div class="project__about">
-                    <h3 class="h3">Our Goals</h3>
-                    <div class="project__about-line project__about-line_lighter"></div>
-                    <div class="project__description">
-                      <p>Our research laboratory focuses on state of the art reinforcement methods and real time signal processing. We develop novel deep learning algorithms for use in classification sets as well as tools for greater transparency within deep learning algorithms. In addition to improving industrial algorithm designs, our side projects include active learning, computer vision, intelligent navigation, and data acquisition.</p>
-                    </div>
-
-                    <a href="https://www.researchgate.net/" class="btn btn_font-sm" target="_blank">
-
-                      <span class="btn__border">
-  <span class="top"></span>
-                      <span class="right"></span>
-                      <span class="bottom"></span>
-                      <span class="left"></span>
-                      </span>
-                      <span class="btn__text">ResearchGate</span>
-
-                    </a>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END project -->
-
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-content">
-            <!-- BEGIN project -->
-            <div class="project-container">
-
-              <div data-animations="consulting" class="project">
-                <div class="project__bg bg-consulting">
-                  <div class="bg-consulting__layer-1"></div>
-                  <div class="bg-consulting__layer-2"></div>
-                  <div class="bg-consulting__layer-3"></div>
-                </div>
-                <div class="project__heading">
-                  <h2 class="h2">Services</h2>
-                  <h4 class="h4">Consulting</h4>
-                </div>
-                <div class="project__inner">
-
-                  <div class="project__figure">
-                    <img class="project__image consulting-interface" src="img/ipad-full2.png">
-                  </div>
-
-                  <div class="project__about">
-                    <h3 class="h3">Your data your way</h3>
-                    <div class="project__about-line project__about-line_dark"></div>
-                    <div class="project__description">
-                      <p>At Vertex, we do more than just research, we provide innovative solutions to businesses of all shapes and sizes. We work closely with our clients to tailor platforms that provide efficient and effective results. If you are looking for business services in fields such as computer science, machine learning, deep learning, data science, engineering, marketing, mathematics, or artificial intelligence contact us today and let us help!</p>
-                    </div>
-
-                    <a href="mailto:tomb@vertexlabs.info" class="btn btn_font-sm" target="_blank">
-
-                      <span class="btn__border">
-  <span class="top"></span>
-                      <span class="right"></span>
-                      <span class="bottom"></span>
-                      <span class="left"></span>
-                      </span>
-                      <span class="btn__text">GET A QUOTE</span>
-
-                    </a>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END project -->
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-    <!-- END content -->
-
-    <!-- BEGIN scripts -->
-    <script type="text/javascript" src="js/vendor.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-    <!-- END scripts -->
-
-  </body>
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script>var _sf_startpt=(new Date()).getTime()</script>
+  <title>Vertex Labs</title>
+  <meta name="description" content="We are Vertex Laboratories. We design custom machine learning algorithms." />
+  <link data-turbolinks-track="true" href="stylesheets/reset.css" media="all" rel="stylesheet" />
+  <link data-turbolinks-track="true" href="stylesheets/master.css" media="all" rel="stylesheet" />
+  <script type="text/javascript" src="https://use.typekit.net/pet5bxj.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+<body class="cf">
+  <section id="pane_one">
+    <h1 id="logo">Vertex Labs</h1>
+    <h2 id="hello"><span>Hello.</span> You&rsquo;ve reached Vertex Labs.</h2>
+  </section>
+  <section id="pane_two">
+    <h3 id="future">We are currently flying under the radar.
+      <br/><br/><br/><br/><br/>
+      <a href="https://www.linkedin.com/company/vertex-laboratories">
+        <span>LinkedIn</span>&nbsp;&nbsp;&nbsp; to find us.
+      </a>
+      <br/><br/>
+      <br/><br/>
+      <a href="https://www.instagram.com/vertexlabs_/">
+        <span>Instagram</span>&nbsp;&nbsp;&nbsp; to follow us.
+      </a>
+      <br/><br/>
+      <br/><br/>
+      <a href="https://angel.co/vertex-laboratories">
+        <span>AngelList</span>&nbsp;&nbsp;&nbsp; to fund us.
+      </a>
+    </h3>
+  </section>
+  <section id="pane_three">
+    <a href="mailto:DavidJ@vertexlabs.info" id="sayhi">DavidJ@vertexlabs.info</a>
+  </section>
+  <section id="pane_four">&nbsp;</section>
+  <section id="pane_five">&nbsp;</section>
+  <aside id="lightlogo">This has been Vertex Labs.</aside>
+  
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="javascripts/master.js"></script>
+  
+
+
+  <script>
+    var _sf_async_config = { uid: 1721, domain: 'vertexlabs.info', useCanonical: true };
+    (function() {
+      function loadChartbeat() {
+        window._sf_endpt = (new Date()).getTime();
+        var e = document.createElement('script');
+        e.setAttribute('language', 'javascript');
+        e.setAttribute('type', 'text/javascript');
+        e.setAttribute('src','https://static.chartbeat.com/js/chartbeat.js');
+        document.body.appendChild(e);
+      };
+      var oldonload = window.onload;
+      window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+    })();
+  </script>
+
+
+</body>
 </html>
