@@ -1,70 +1,477 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <script>var _sf_startpt=(new Date()).getTime()</script>
-  <title>Vertex Labs</title>
-  <meta name="description" content="We are Vertex Laboratories. We design custom machine learning algorithms." />
-  <link data-turbolinks-track="true" href="stylesheets/reset.css" media="all" rel="stylesheet" />
-  <link data-turbolinks-track="true" href="stylesheets/master.css" media="all" rel="stylesheet" />
-  <script type="text/javascript" src="https://use.typekit.net/pet5bxj.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<!-- Standard Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/png" href="images/favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon.ico" sizes="16x16" />
+
+	<!-- Site Properties -->
+	<title>Vertex Laboratories - Deep learning, Deep insights</title>
+	<link rel="stylesheet" type="text/css" href="dist/components/reset.css">
+	<link rel="stylesheet" type="text/css" href="dist/components/site.css">
+
+    <link rel="stylesheet" type="text/css" href="dist/components/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/components/container.css">
+	<link rel="stylesheet" type="text/css" href="dist/components/grid.css">
+	<link rel="stylesheet" type="text/css" href="dist/components/header.css">
+	<link rel="stylesheet" type="text/css" href="dist/components/image.css">
+	<link rel="stylesheet" type="text/css" href="dist/components/menu.css">
+    <link rel="stylesheet" type="text/css" href="dist/components/card.css">
+    <link rel="stylesheet" type="text/css" href="dist/components/feed.css">
+    <link rel="stylesheet" type="text/css" href="dist/components/divider.css">
+	<link rel="stylesheet" type="text/css" href="dist/components/dropdown.css">
+	<link rel="stylesheet" type="text/css" href="dist/components/segment.css">
+	<link rel="stylesheet" type="text/css" href="dist/components/button.css">
+	<link rel="stylesheet" type="text/css" href="dist/components/list.css">
+    <link rel="stylesheet" type="text/css" href="dist/components/label.css">
+    <link rel="stylesheet" type="text/css" href="dist/components/item.css">
+    <link rel="stylesheet" type="text/css" href="dist/components/icon.css">
+	<link rel="stylesheet" type="text/css" href="dist/components/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="dist/components/statistic.css">
+    <link rel="stylesheet" type="text/css" href="dist/components/transition.css">
+
+	<style type="text/css">
+
+
+        /*Typed Cursor*/
+        .typed-cursor{
+            opacity: 1;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+
+
+		.hidden.menu {
+			display: none;
+		}
+
+		.masthead.segment {
+			min-height: 700px;
+			padding: 1em 0em;
+		}
+		.masthead .logo.item img {
+			margin-right: 1em;
+		}
+		.masthead .ui.menu .ui.button {
+			margin-left: 0.5em;
+		}
+		.masthead h1.ui.header {
+			margin-top: 3em;
+			margin-bottom: 0em;
+			font-size: 4em;
+			font-weight: normal;
+		}
+		.masthead h2 {
+			font-size: 1.7em;
+			font-weight: normal;
+		}
+
+		.ui.vertical.stripe {
+			padding: 8em 0em;
+		}
+		.ui.vertical.stripe h3 {
+			font-size: 2em;
+		}
+		.ui.vertical.stripe .button + h3,
+		.ui.vertical.stripe p + h3 {
+			margin-top: 3em;
+		}
+		.ui.vertical.stripe .floated.image {
+			clear: both;
+		}
+		.ui.vertical.stripe p {
+			font-size: 1.33em;
+		}
+		.ui.vertical.stripe .horizontal.divider {
+			margin: 3em 0em;
+		}
+
+		.quote.stripe.segment {
+			padding: 0em;
+		}
+		.quote.stripe.segment .grid .column {
+			padding-top: 5em;
+			padding-bottom: 5em;
+		}
+
+		.footer.segment {
+			padding: 5em 0em;
+		}
+
+		.secondary.pointing.menu .toc.item {
+			display: none;
+		}
+
+		@media only screen and (max-width: 700px) {
+			.ui.fixed.menu {
+				display: none !important;
+			}
+			.secondary.pointing.menu .item,
+			.secondary.pointing.menu .menu {
+				display: none;
+			}
+			.secondary.pointing.menu .toc.item {
+				display: block;
+			}
+			.masthead.segment {
+				min-height: 350px;
+			}
+			.masthead h1.ui.header {
+				font-size: 2em;
+				margin-top: 1.5em;
+			}
+			.masthead h2 {
+				margin-top: 0.5em;
+				font-size: 1.5em;
+			}
+		}
+
+
+	</style>
+
+	<script src="assets/library/jquery.min.js"></script>
+	<script src="assets/library/typed.js"></script>
+	<script src="dist/components/visibility.js"></script>
+	<script src="dist/components/sidebar.js"></script>
+	<script src="dist/components/transition.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+    
+	<script>
+		$(document)
+				.ready(function() {
+
+					// fix menu when passed
+					$('.masthead')
+							.visibility({
+								once: false,
+								onBottomPassed: function() {
+									$('.fixed.menu').transition('fade in');
+								},
+								onBottomPassedReverse: function() {
+									$('.fixed.menu').transition('fade out');
+								}
+							})
+					;
+
+					// create sidebar and attach to menu open
+					$('.ui.sidebar')
+							.sidebar('attach events', '.toc.item')
+					;
+
+				})
+		;
+	</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91434287-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </head>
-<body class="cf">
-  <section id="pane_one">
-    <h1 id="logo">Vertex Labs</h1>
-    <h2 id="hello"><span>Hello.</span> You&rsquo;ve reached Vertex Labs.</h2>
-  </section>
-  <section id="pane_two">
-    <h3 id="future">We are currently flying under the radar.
-      <br/><br/><br/><br/><br/>
-      <a href="https://www.linkedin.com/company/vertex-laboratories">
-        <span>LinkedIn</span>&nbsp;&nbsp;&nbsp; to find us.
-      </a>
-      <br/><br/>
-      <br/><br/>
-      <a href="https://www.instagram.com/vertexlabs_/">
-        <span>Instagram</span>&nbsp;&nbsp;&nbsp; to follow us.
-      </a>
-      <br/><br/>
-      <br/><br/>
-      <a href="https://angel.co/vertex-laboratories">
-        <span>AngelList</span>&nbsp;&nbsp;&nbsp; to fund us.
-      </a>
-    </h3>
-  </section>
-  <section id="pane_three">
-    <a href="mailto:DavidJ@vertexlabs.info" id="sayhi">DavidJ@vertexlabs.info</a>
-  </section>
-  <section id="pane_four">&nbsp;</section>
-  <section id="pane_five">&nbsp;</section>
-  <aside id="lightlogo">This has been Vertex Labs.</aside>
-  
+<body>
+
+<!-- Following Menu -->
+<div class="ui large top fixed hidden menu">
+	<div class="ui container">
+        <a href="#" class="active item">Home</a>
+        <a href="#about" class="item">About</a>
+        <a href="#clients" class="item">Clients</a>
+        <a href="#consulting" class="item">Consulting</a>
+    </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+    <a href="#" class="active item">Home</a>
+    <a href="#about" class="item">About</a>
+    <a href="#clients" class="item">Clients</a>
+    <a href="#consulting" class="item">Consulting</a>
+</div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="javascripts/master.js"></script>
-  
+<!-- Page Contents -->
+<div class="pusher">
+	<div class="ui inverted vertical masthead center aligned segment">
+
+		<div class="ui container">
+			<div class="ui large secondary inverted pointing menu">
+				<a class="toc item">
+					<i class="sidebar icon"></i>
+				</a>
+                <a href="#" class="active item">Home</a>
+                <a href="#about" class="item">About</a>
+                <a href="#clients" class="item">Clients</a>
+                <a href="#consulting" class="item">Consulting</a>
+            </div>
+		</div>
+
+		<div class="ui text container">
+			<h1 class="ui inverted header">
+				Vertex Laboratories
+			</h1>
+            <h2>
+                <span class="intro"></span>
+            </h2>
+		</div>
+	</div>
 
 
-  <script>
-    var _sf_async_config = { uid: 1721, domain: 'vertexlabs.info', useCanonical: true };
-    (function() {
-      function loadChartbeat() {
-        window._sf_endpt = (new Date()).getTime();
-        var e = document.createElement('script');
-        e.setAttribute('language', 'javascript');
-        e.setAttribute('type', 'text/javascript');
-        e.setAttribute('src','https://static.chartbeat.com/js/chartbeat.js');
-        document.body.appendChild(e);
-      };
-      var oldonload = window.onload;
-      window.onload = (typeof window.onload != 'function') ?
-        loadChartbeat : function() { oldonload(); loadChartbeat(); };
-    })();
-  </script>
+	<div id="about" class="ui vertical stripe segment">
+		<div class="ui middle aligned stackable grid container">
+			<div class="row">
+				<div class="eight wide column wow bounceInLeft">
+					<h3 class="ui header">About Vertex</h3>
+					<p>Vertex is a team of engineers, scientists, and entrepreneurs with a shared goal of applying cutting endge research to real world applications. We believe that the complex problems of tomorrow can be solved today through the implementation of creative and innovative approaches given our diverse background in engineering, software, and mathematics. Our team provides meaningful insight and solutions with leaders in business, science, and medicine.</p>
+				</div>
+				<div class="six wide right floated center aligned column wow bounceInRight">
+					<img src="images/data.jpg" class="ui large rounded image">
+                </div>
+			</div>
+		</div>
+	</div>
 
+
+    <div id="clients" class="ui vertical stripe inverted centered segment">
+        <div class="ui middle aligned stackable grid inverted container">
+            <div class="row">
+                <div class="five wide column wow bounceInLeft">
+                    <img class="ui large rounded image" src="images/laptop2.svg">
+                </div>
+                <div class="nine wide right floated column">
+                    <h3 class="ui inverted header">Recent Clients</h3>
+                    <div class="ui floated cards">
+                        <div class="card wow flipInX data-wow-delay=".25s">
+                            <div class="content">
+                                <div class="header">Project One</div>
+                                <div class="meta">
+                                    <span class="right floated time">Dec 2016- Present</span>
+                                    <span class="category">Edtech</span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="ui small feed">
+                                    <div class="event">
+                                        <div class="content">
+                                            <div class="summary">
+                                                Uses artificial intelligence to level the playing field of undergraduate education
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event">
+                                        <div class="content">
+                                            <div class="summary">
+                                                Algorithms adapt to students, realizing patterns in their learning habits like a real-life teacher might
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event">
+                                        <div class="content">
+                                            <div class="summary">
+                                                SBIR grant pending
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card wow flipInX data-wow-delay=".5s"">
+                            <div class="content">
+                                <div class="header">Blinc</div>
+                                <div class="meta">
+                                    <span class="right floated time">Oct 2016-Present</span>
+                                    <span class="category">Adtech</span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="ui small feed">
+                                    <div class="event">
+                                        <div class="content">
+                                            <div class="summary">
+                                                Applies deep learning to modern marketing techniques in mobile advertising
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event">
+                                        <div class="content">
+                                            <div class="summary">
+                                                Integrates both consumer and business data to offer suggested products to users
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event">
+                                        <div class="content">
+                                            <div class="summary">
+                                                Offers actionable insight to businesses with tractable metrics
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card wow flipInX data-wow-delay=".75s"">
+                            <div class="content">
+                                <div class="header">Oratio</div>
+                                <div class="meta">
+                                    <span class="right floated time">2016</span>
+                                    <span class="category">Audio Processing</span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="ui small feed">
+                                    <div class="event">
+                                        <div class="content">
+                                            <div class="summary">
+                                                Developed custom voice activation detection algorithms
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event">
+                                        <div class="content">
+                                            <div class="summary">
+                                                Modeled filler word detection with raw audio signals of natural speech
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event">
+                                        <div class="content">
+                                            <div class="summary">
+                                                Provided custom image recognition solutions for smile intensity detection
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card wow flipInX data-wow-delay="1s"">
+                            <div class="content">
+                                <div class="header">Drexel University</div>
+                                <div class="meta">
+                                    <span class="right floated time">2016</span>
+                                    <span class="category">Automation</span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="ui small feed">
+                                    <div class="event">
+                                        <div class="content">
+                                            <div class="summary">
+                                                Automated search and rescue drone with fleet learning
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event">
+                                        <div class="content">
+                                            <div class="summary">
+                                                Built image recognition software to classify rescuee over a large area
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event">
+                                        <div class="content">
+                                            <div class="summary">
+                                                Improved stabilization algorithms for higher focusing capabilities
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="consulting" class="ui vertical stripe segment">
+        <div class="ui middle aligned stackable grid container">
+            <div class="row">
+                <div class="eight wide column wow bounceInLeft">
+                    <h3 class="ui header">Consulting</h3>
+                    <p>At Vertex, we do more than just research, we provide innovative solutions to businesses of all shapes and sizes. We work closely with our clients to tailor platforms that provide efficient and effective results. If you are looking for business services in fields such as computer science, machine learning, deep learning, data science, engineering, marketing, mathematics, or artificial intelligence contact us today and let us help!</p>
+                </div>
+                <div class="six wide right floated center aligned column wow bounceInRight">
+                    <img src="images/robot.gif" class="ui large rounded image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+	<div class="ui inverted vertical footer segment">
+		<div class="ui container">
+			<div class="ui stackable inverted divided equal height stackable grid">
+				<div class="three wide column">
+					<h4 class="ui inverted header">Contact Us</h4>
+					<div class="ui inverted link list">
+						<a href="mailto:dnjuboor@gmail.com" class="item">Email</a>
+						<a href="instagram.com/vertexlabs_/" class="item">Instagram</a>
+						<a href="https://www.linkedin.com/company/vertex-laboratories" class="item">LinkedIn</a>
+					</div>
+				</div>
+				<div class="three wide column">
+					<h4 class="ui inverted header">Random</h4>
+					<div class="ui inverted link list">
+                        <a href="www.holdmyramen.com" class="item">Affiliated Blog</a>
+                        <a href="https://github.com/Djuboor/Djuboor.github.io" class="item">Source available here</a>
+                    </div>
+				</div>
+				<div class="seven wide column">
+					<h4 class="ui inverted header">Made in SF & Philly with <i class="red heartbeat icon"></i></h4>
+                    <div class="ui inverted link list">
+                        <a class="item">Website build by Om Mahida</a>
+                        <a href="https://semantic-ui.com" class="item">Libraries Used: Semantic-UI, annimate.css, Typed.js, WOW.js</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+    $(function(){
+        new WOW().init();
+    });
+</script>
 
 </body>
+
+<script>
+    $(function(){
+        $(".intro").typed({
+            strings: ["DATA SCIENCE", "SOFTWARE + HARDWARE AUTOMATION", "RESEARCH", "DATA + AUTOMATION + RESEARCH"],
+            typeSpeed: 1
+        });
+    });
+</script>
+
 </html>
