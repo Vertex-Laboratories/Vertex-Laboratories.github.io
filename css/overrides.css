@@ -62,7 +62,7 @@
   #services-2 .text-box .description  { font-size: 14px !important;}
 
 
-
+  #industries .grid .column h1 {overflow: auto !important; margin-top: 0px !important; margin-bottom: 0px !important}
   #industries .web-img {display: none !important}
   #industries .card {width: 95vw !important; height: auto; box-shadow: 4px 2px 2px lightgrey; margin: auto !important; overflow: hidden}
   #industries .card .header p {font-size: 18px}
