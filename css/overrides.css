@@ -1,0 +1,162 @@
+.icon-bar { background-color: white; }
+
+.navbar-collapse { box-shadow: none; }
+
+@media only screen and (min-width: 1950px) {
+  #services-1 .grid .row .column .text-box .heading {font-size: 50px !important;}
+  #services-1 .grid .row .column .text-box .card .header {color: #4e4e4f; font-size: 38px !important;}
+  #services-1 .grid .row .column .text-box .description  { font-size: 34px !important;}
+  #services-1 .grid .row .column .slider-box { margin-top: 82px !important;}
+
+  #services-2 .grid .slogan-1 .column h1 {font-size:  60px !important; }
+  #services-2 .text-box .card {width: 30vw !important;}
+  #services-2 .text-box .card .header {color: #4e4e4f; font-size: 38px !important;}
+  #services-2 .text-box .description  { font-size: 34px !important;}
+  #services-2 .text-box .button  {font-size: 33px !important;}
+
+
+  #industries  ul#horizontal-list li {padding-right: calc(20px + 1vw); font-size: calc(18px + 0.75vw);}
+  #industries .grid .slogan-3 .column h1 {line-height: 1em; font-size: calc(18px + 2.25vw); }
+  #industries .grid .slogan-3 .column h3 {font-size: calc(10px + 0.75vw); letter-spacing: 1px; }
+  #industries .card .header p {padding-top: 25px; font-size: 38px; line-height: 1.1em}
+  #industries .card .description p {padding-top:  25px; font-size: 34px;}
+
+
+
+  #resources .contact .get-quote .button {margin-top: 30px; font-size: 28px !important;}
+  #resources .contact .get-quote p {font-size: calc(15px + .45vw) !important;}
+  #resources .contact .contact-info p {font-size: 25px !important;}
+  #resources .contact .header h4 {font-size: 35px}
+  #resources {height: 87vh !important ;}
+
+  #footer ul li { padding: 0 80px;}
+
+  
+  }
+
+
+@media only screen and (max-width: 1050px) {
+  #webnav .menu {font-size: 12px !important}
+
+  #services-2 .text-box .description  { font-size: 13px !important;}
+
+  }
+
+
+
+/*Mobile*/ 
+@media only screen and (max-width: 764px) { 
+
+
+  #home .brand h1 { font-size: calc(16px + 2.75vw); }
+  #home .brand h2 { font-size: calc(8px + .25vw); line-height: 10px }
+
+
+  #web-nav .logo-large {visibility: hidden !important;}
+  #services-1 .grid {padding-top: 20vh !important;}
+  #services-1 .grid { height: none !important; padding-bottom: 30px !important }
+  #services-1 .grid .slogan-1 .column h1 {margin-bottom: 0px }
+  #services-1 .grid .row .column .text-box .description  { font-size: 16px !important;}
+
+  #services-2 .card { width: 95vw !important; margin-bottom: 50px !important}
+  #services-2 .text-box .description  { font-size: 14px !important;}
+
+
+
+  #industries .web-img {display: none !important}
+  #industries .card {width: 95vw !important; height: auto; box-shadow: 4px 2px 2px lightgrey; margin-top: auto; margin-bottom: auto; overflow: hidden}
+  #industries .card .header p {font-size: 18px}
+  #industries .card .description p {font-size: 14px; padding-top: 20px}
+  #industries .button {margin-top:  25px;}
+
+
+  
+  #resources .google-web {display: none !important}
+  #resources .contact {width: 90vw !important; height: auto !important;}
+  #resources .sponsors {margin-top: 30px !important; height: 150px}
+  #resources .contact .header h4 {margin-top: -20px;}
+  #resources .contact .header {width: 95vw !important; margin-left: 0px !important}
+  #resources .contact .get-quote {width: 90vw !important; padding: 0; padding-left: 35px !important; margin-right: 5px !important; margin-left: -20px !important; }
+  #resources .contact .get-quote p {font-size: 16px !important}
+  #resources .contact .get-quote .button {width: 69vw}
+  #resources .contact .contact-info {width: 90vw !important; padding: 0;}
+  #resources .contact .contact-info p {margin-right: 25px; font-size: 16px !important}
+  #resources .sponsors {display: none}
+
+  #footer .license {margin-top: 0px; margin: 0;}
+  #footer .license li {margin-bottom: -50px}
+  #footer .license ul {padding-bottom:  27px}
+
+  }
+
+/*Not Mobile*/
+@media only screen and (min-width: 764px) { 
+
+  #services-1 { min-height: 100vh !important;}   
+  #services-2 { min-height: 100vh !important;}
+  #industries { min-height: 100vh !important;}
+  #resources { min-height: 88vh !important;}
+
+  #industries .mobile-img {display: none !important}
+  #resources .google-mobile {display: none !important}
+
+  }
+
+
+@media only screen and (max-width:  700px){
+  #services-1 .grid .row .column .text-box .card { width: 100% !important;}
+  #services-2 .grid .row .column .text-box .card { width: 100% !important;}
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 523px) { 
+  #mobile-nav #navicon {display: none !important;}
+  #mobile-nav #contact-cta {display: none !important;}
+  #web-nav .menu {visibility: visible !important;}
+  #web-nav .logo-large {display: block !important;}
+
+
+}
+
+
+@media only screen and (max-width: 523px) { 
+
+  #industries .grid .slogan-3 .column h1 {margin-top: -30px; font-size: calc(8.5px + 1vw); font-weight: 600}
+  #industries .grid .slogan-3 .column h3 {display: none}
+
+}
+
+@media only screen and (max-width: 360px) { 
+
+  #work h3 { font-size: 1.4em; } 
+  #about .image {display:none !important; }
+  #services-1 { min-height: 170vh }
+
+}
+
+
+
+@-webkit-keyframes pulse_animation {
+    0% { -webkit-transform: scale(1); }
+    30% { -webkit-transform: scale(1); }
+    40% { -webkit-transform: scale(1.45); }
+    50% { -webkit-transform: scale(1); }
+    60% { -webkit-transform: scale(1); }
+    70% { -webkit-transform: scale(1.25); }
+    80% { -webkit-transform: scale(1); }
+    100% { -webkit-transform: scale(1); }
+}
+.pulse {
+    -webkit-animation-name: 'pulse_animation';
+    -webkit-animation-duration: 3000ms;
+    -webkit-transform-origin:70% 70%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+

@@ -1,362 +1,519 @@
 <!DOCTYPE html>
-<html>
+<html class="js rgba backgroundsize cssanimations cssgradients csstransforms fontface" lang="en">
+<!--<![endif]-->
+
+
+<!-- ########## HEAD INFORMATION ########## -->
 <head>
-	<!-- Standard Meta -->
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-    <!-- Fav Icon -->
-    <link rel="icon" type="image/png" href="images/favicon.ico" sizes="32x32" />
-    <link rel="icon" type="image/png" href="images/favicon.ico" sizes="16x16" />
-
-	<!-- Site Properties -->
-	<title>Vertex Laboratories - Deep learning, Deep insights</title>
-	<link rel="stylesheet" type="text/css" href="dist/components/reset.css">
-	<link rel="stylesheet" type="text/css" href="dist/components/site.css">
-
-    <link rel="stylesheet" type="text/css" href="dist/components/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/container.css">
-	<link rel="stylesheet" type="text/css" href="dist/components/grid.css">
-	<link rel="stylesheet" type="text/css" href="dist/components/header.css">
-	<link rel="stylesheet" type="text/css" href="dist/components/image.css">
-	<link rel="stylesheet" type="text/css" href="dist/components/menu.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/card.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/feed.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/divider.css">
-	<link rel="stylesheet" type="text/css" href="dist/components/dropdown.css">
-	<link rel="stylesheet" type="text/css" href="dist/components/segment.css">
-	<link rel="stylesheet" type="text/css" href="dist/components/button.css">
-	<link rel="stylesheet" type="text/css" href="dist/components/list.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/label.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/item.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/icon.css">
-	<link rel="stylesheet" type="text/css" href="dist/components/sidebar.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/statistic.css">
-    <link rel="stylesheet" type="text/css" href="dist/components/transition.css">
-
-	<style type="text/css">
-
-
-        /*Typed Cursor*/
-        .typed-cursor{
-            opacity: 1;
-            -webkit-animation: blink 0.7s infinite;
-            -moz-animation: blink 0.7s infinite;
-            animation: blink 0.7s infinite;
-        }
-        @keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-webkit-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-moz-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-
-
-		.hidden.menu {
-			display: none;
-		}
-
-		.masthead.segment {
-			min-height: 700px;
-			padding: 1em 0em;
-		}
-		.masthead .logo.item img {
-			margin-right: 1em;
-		}
-		.masthead .ui.menu .ui.button {
-			margin-left: 0.5em;
-		}
-		.masthead h1.ui.header {
-			margin-top: 3em;
-			margin-bottom: 0em;
-			font-size: 4em;
-			font-weight: normal;
-		}
-		.masthead h2 {
-			font-size: 1.7em;
-			font-weight: normal;
-		}
-
-		.ui.vertical.stripe {
-			padding: 8em 0em;
-		}
-		.ui.vertical.stripe h3 {
-			font-size: 2em;
-		}
-		.ui.vertical.stripe .button + h3,
-		.ui.vertical.stripe p + h3 {
-			margin-top: 3em;
-		}
-		.ui.vertical.stripe .floated.image {
-			clear: both;
-		}
-		.ui.vertical.stripe p {
-			font-size: 1.33em;
-		}
-		.ui.vertical.stripe .horizontal.divider {
-			margin: 3em 0em;
-		}
-
-		.quote.stripe.segment {
-			padding: 0em;
-		}
-		.quote.stripe.segment .grid .column {
-			padding-top: 5em;
-			padding-bottom: 5em;
-		}
-
-		.footer.segment {
-			padding: 5em 0em;
-		}
-
-		.secondary.pointing.menu .toc.item {
-			display: none;
-		}
-
-		@media only screen and (max-width: 700px) {
-			.ui.fixed.menu {
-				display: none !important;
-			}
-			.secondary.pointing.menu .item,
-			.secondary.pointing.menu .menu {
-				display: none;
-			}
-			.secondary.pointing.menu .toc.item {
-				display: block;
-			}
-			.masthead.segment {
-				min-height: 350px;
-			}
-			.masthead h1.ui.header {
-				font-size: 2em;
-				margin-top: 1.5em;
-			}
-			.masthead h2 {
-				margin-top: 0.5em;
-				font-size: 1.5em;
-			}
-		}
-
-
-	</style>
-
-	<script src="assets/library/jquery.min.js"></script>
-	<script src="assets/library/typed.js"></script>
-	<script src="dist/components/visibility.js"></script>
-	<script src="dist/components/sidebar.js"></script>
-	<script src="dist/components/transition.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+  
+  <!-- Standard Meta -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
     
-	<script>
-		$(document)
-				.ready(function() {
 
-					// fix menu when passed
-					$('.masthead')
-							.visibility({
-								once: false,
-								onBottomPassed: function() {
-									$('.fixed.menu').transition('fade in');
-								},
-								onBottomPassedReverse: function() {
-									$('.fixed.menu').transition('fade out');
-								}
-							})
-					;
+  <!-- SEO Meta -->
+  <meta content="Vertex Laboratories - Machine Learning and Automation Consulting" name="description">
+  <meta content="Vertex, Laboratories, Vertex Laboratories, Vertex Labs, Deep learning, Machine Learning, AI, ML, Artificial Intelligence, Consulting, Technology, Research" name="keywords">
 
-					// create sidebar and attach to menu open
-					$('.ui.sidebar')
-							.sidebar('attach events', '.toc.item')
-					;
+  <title>Vertex Laboratories - Deep learning, Deep insights</title>
+  <meta content="http://vertexlabs.info/images/icon.PNG" property="og:image">
+  <link rel="icon" type="image/png" href="images/Vertex_Icon.svg" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/Vertex_Icon.svg" sizes="16x16" />
 
-				})
-		;
-	</script>
+  <!-- CSS and JS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/animate.min.css" rel="stylesheet">
+  <link href="./css/font-awesome.min.css" rel="stylesheet">
+  <link href="images/thumbnail.png" rel="icon" type="image/png">
+  <link href="css/main.min.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
+  <link href="css/overrides.css" rel="stylesheet">
+  <link href="css/nojs.css" rel="stylesheet">
+  <link rel='stylesheet' id='twentytwenty-css' href='css/twentytwenty.css' type='text/css' media='all'/>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/viewportchecker.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="./js/pushy.min.js"></script>
+  <script src="./js/modernizr.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/particles.js"></script>
+  <script type='text/javascript' src='js/jquery.twentytwenty.js'></script>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <!-- Semantic CSS -->
+  <link href="./css/semantic/button.css" rel="stylesheet">
+  <link href="./css/semantic/menu.css" rel="stylesheet">
+  <link href="./css/semantic/grid.css" rel="stylesheet">
+  <link href="./css/semantic/card.css" rel="stylesheet">
 
-  ga('create', 'UA-91434287-1', 'auto');
-  ga('require', 'displayfeatures');
-  ga('send', 'pageview');
+  <style>
+    canvas {
+     display: block;
+     vertical-align: bottom;
+    }
 
-</script>
 
+    /*On-the-fly Particle.js edits*/
+    #particles-js {
+     position: absolute;
+     opacity: 0.35
+     width: 100%;
+     height: 100%;
+     background-color: white;
+     background-image: url("");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: 50% 50%;
+    }
+  </style>
 </head>
-<body>
 
-<!-- Following Menu -->
-<div class="ui large top fixed hidden menu">
-	<div class="ui container">
-        <a href="#" class="active item">Home</a>
-        <a href="#about" class="item">About</a>
-        <a href="#clients" class="item">Clients</a>
-        <a href="#consulting" class="item">Consulting</a>
-        <a href="https://www.instagram.com/vertexlabs_/" class="item right"><i class="instagram icon"></i></a>
-        <a href="https://angel.co/vertex-laboratories/jobs" class="item">Jobs</a>
+
+
+
+
+<!-- ########## BODY ########## -->
+<body class="">
+
+
+  <!-- Particle Div -->
+
+<video autoplay loop id="video-background" muted plays-inline>
+  <source src="video/background.mp4" type="video/mp4">
+</video>
+
+<!--   <div id="particles-js">
+  </div>
+ -->
+
+
+
+
+  <!-- ########## MOBILE NAVIGATION BAR ########## -->
+  <section id="mobile-nav">
+
+    <a class="animated fadeInLeft closed menu-btn" id="navicon">
+      <img class="logo" src="images/menu_icon.SVG">
+    </a>
+
+    <div class="nav pushy pushy-left" id="">
+      <ul>
+        <li><a class="home" href="#services-1"><i class="fa fa-home"></i>Home</a></li>
+        <li><a class="services" href="#services-2"><i class="fa fa-bar-chart"></i>Services</a></li>
+        <li><a class="industries" href="#industries"><i class="fa fa-institution"></i>Industries</a></li>
+        <li><a class="clients" href="#resources"><i class="fa fa-user"></i>Resources</a></li>
+
+        <li><a class="cta">
+          <a href="forms/Quote.html">
+            <button class="ui green button huge">Get a Quote</button>
+          </a>
+        </li>
+      </ul>
+
     </div>
+
+    <div class="animated fadeInRight" id="contact-cta">
+      <a href="#resources">
+        <button class="ui green button huge">Contact Us</button>
+      </a>
+    </div>
+
+  </section>
+
+
+    <!-- ########## WEB NAVIGATION MENU ########## -->
+  <section id="web-nav">
+    <div class="ui secondary top fixed pointing menu">
+      <a class="item logo" href="#home"> <img class="logo-large" src="images/Medium Logo.png"> </a>
+
+      <div class="right menu">
+        <a class="ui item" href="#services-1"> Home </a>
+        <a class="ui item" href="#services-2"> Services </a>
+        <a class="ui item" href="#industries"> Industries </a>
+        <a class="ui item" href="#resources"> Resources </a>
+        <a class="ui item cta" href="#resources"> <button class="ui green button huge">Contact Us</button> </a>
+      
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ########## LANDING PAGE ########## -->
+  <section class="bw" id="home">
+
+    <div class="brand">
+      <h1 class="animated fadeInUp">Vertex Laboratories</h1>
+      <h2 class="animated fadeInUp">Machine Learning and Artificial Intelligence Consulting<br>Driving Business Automation</h2>
+    </div>
+
+
+    <div class="chevron animated fadeInUp">
+      <div>
+        Scroll down
+      </div>
+      <i class="flaticon-bottom4 down"></i>
+    </div>
+  </section>
+
+
+
+
+
+  <section id="services-1">
+
+    <div class="center aligned ui equal width grid stackable">
+
+        <div class="slogan-1 row">
+          <div class="column centered">
+            <h1> Our Experts <br> Put AI on <b>YOUR</b> side. </h1>
+          </div>
+        </div>
+
+      <div class="row"> 
+        <div class="column">
+
+          <div class="ui segment text-box">
+            <div class="heading"> Before </div>
+            <div class="ui doubling link centered raised card">
+               <div class="content">
+                <div class="header">You're Getting <br> <b>Tired</b> </div>
+                <div class="description">
+                  <p>With spreadsheets, sensors, and data-silos everywhere it has become near impossible to make the right decision when it matters. Making better business decisions requires excessive amounts of time and money to create effective automated systems. As data collection pipelines continue to grow at an exponential rate, artificially intelligent systems are becoming a necessity for any data-driven business. In most cases sourcing, hiring, and training technical staff to implement these solutions is an impractical and unscalable approach to the problem at hand.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="seven wide column computer only">
+            <div class="ui segment slider-box">
+              <img src='images/Before-After.png'>
+
+    <!--           <div class='twentytwenty-container'>
+                <img src='images/after.jpg' alt=''>
+                <img src='images/after.jpg' alt=''>
+              </div> -->
+
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui segment text-box">
+              <div class="heading"> After </div>
+              <div class="ui doubling link centered raised card">
+                 <div class="content">
+                  <div class="header">Decisions<br> <b>Made Easy</b> </div>
+                  <div class="description">
+                    <p>Vertex provides all of the benefits of having an entire workforce of data science experts, while avoiding the overhead. Companies are empowered to realize the best results from their data in a dynamic and agile environment while continuing to focus on their business. With a dedicated team of 24/7 data scientists compiling, collaborating and streamlining mission critical information our clients are able to automate the mundane and augment the difficult, making the future a reality today.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+
+ <section id="services-2">
+
+    <div class="center aligned ui equal width grid stackable">
+
+        <div class="slogan-2 row">
+          <div class="column centered">
+            <h1> Our Solutions are <br> Built to be <font color="red"><span class="typed"></span></font> </h1>
+          </div>
+        </div>
+
+      <div class="row">
+
+        <div class="ui cards text-box ">
+            <div class="ui doubling centered raised card">
+               <div class="content">
+                <div> <img src='images/Consulting.svg'></div>
+                <div class="header"> <b>Consulting</b> </div>
+                <div class="description">
+                  <p>For clients with significantly large or niche data science needs, we provide both temporary and on-going consulting services. For clients needing to begin with data collection, we work side-by-side to design and develop solutions to fit their unique situation. Our clients are able to realize the benefits of having a dedicated in-house data science team without incurring the costly overhead required to staff, train and maintain an in-house team. The utilization of our expertise and strategic partnerships with industry leaders, allows our clients to significantly save time and reduce cost when deploying their pipelines.</p>
+                </div>
+              </div>
+                <div class="extra content">
+                  <a href="Consulting.PDF" target="_blank">
+                    <button class="ui green button huge consulting">Learn More</button>
+                  </a>           
+                </div>
+            </div>
+
+            <div class="ui doubling centered raised card">
+               <div class="content">
+                <div> <img src='images/Cloud Services.svg'></div>
+                <div class="header"> <b>Cloud Services</b> </div>
+                <div class="description">
+                  <p>Vertex provides cloud services at a discount through our strategic partnerships offering scalability and efficiency for any size need. For clients utilizing local databases, we manage the entire process of analyzing existing systems, determining the best fit, and the migration process. Our cloud support enables companies to optimize their pipelines regardless of the size of data. Clients benefit from increases in efficiency, security, scalability, and accuracy, while lowering costs and minimizing the need for advanced compute power.</p>
+                </div>
+              </div>
+                <div class="extra content">
+                  <a href="Cloud Services.PDF" target="_blank">
+                    <button class="ui green button huge cloud">Learn More</button>
+                  </a>           
+                </div>
+            </div>
+
+
+            <div class="ui doubling centered raised card">
+               <div class="content">
+                <div> <img src='images/Licensing.svg'></div>
+                <div class="header"> <b>Licensing </b></div>
+                <div class="description">
+                  <p>Our licensed solutions are an affordable fit for clients in need of immediate solutions. These solutions are available for immediate deployment with minimum training requirements. This a perfect fit for clients seeking to quickly implement advanced features or optimize existing processes. Licensing expedites the process of implementing advanced technology, while ensuring a tailored solution, providing the most value for our client’s needs. Clients benefit from the quick turnaround time and seamless integration of our technology, without spending the time and money to develop in-house.</p>
+                </div>
+              </div>
+                <div class="extra content">
+                  <a href="Licensing.PDF" target="_blank">
+                    <button class="ui green button huge license">Learn More</button>
+                  </a>           
+                </div>
+            </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  
+
+
+
+
+
+
+<section id="industries">
+  <div class="center aligned ui equal width grid stackable">
+    <div class="slogan-3 row">
+      <div class="column centered">
+          <h1> Data Driven, Automated, Intelligent </h1>
+          <h3>Just a few examples of how Vertex Laboratories helps our clients create <br> better systems, products, and services</h3>
+      </div>
+    </div>
+
+  <div class="ui segment">
+    <div id="menu-outer">
+      <div class="table">
+        <ul id="horizontal-list">
+          <li><a href="javascript:showonlyone('pharm');" class="pharma active">Pharmaceuticals</a></li>
+          <li><a href="javascript:showonlyone('health');" class="health">Healthcare</a></li>
+          <li><a href="javascript:showonlyone('bi');" class="bi">Business Intelligence</a></li>
+          <li><a href="javascript:showonlyone('retail');" class="retail">Retail</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="pharm" class="row stretched toggled">
+    <div class="eight wide column right aligned">
+        <div> <img class="mobile-img" src="images/Industries/pharm banner.jpg"></div>
+        <div> <img class="web-img" src='images/Industries/pharma-2.jpg'></div>
+    </div>
+
+    <div class="eight wide column">
+      <div class="ui doubling centered raised card">
+         <div class="content">
+          <div class="header"> <p>Optimizing and automating the engineering of today to design the drugs of tomorrow</p></div>
+          <div class="description">
+            <p>Drug discovery and development is lengthy and expensive. Brute force candidate selection is inefficient and time consuming and the data generated is often difficult to compare to similar candidates. Additionally, manual experimentation and analysis makes it difficult to deliver the insights required to accurately predict development or manufacturing issues down the line. <br><br>
+            Our solutions provide time efficient analytics to make important decisions earlier in the drug development lifecycle. With automation, human error is reduced while time and resources are preserved. Data visualization and anomaly detection grant accurate outcome assessment, testing efficiency and faster time to market.
+
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="health" class="row stretched toggled">
+    <div class="eight wide column right aligned">
+        <div> <img class="mobile-img" src="images/Industries/healthcare banner.jpg"></div>
+        <div> <img class="web-img" src='images/Industries/heathcare.jpg'></div>
+    </div>
+
+    <div class="column">
+      <div class="ui doubling centered raised card">
+         <div class="content">
+          <div class="header"> <p>Helping healthcare professionals optimize their data to save lives</p></div>
+          <div class="description">
+            <p>Effective medical care is time sensitive and requires a complete understanding of a patient’s current health and medical records. The processes for collecting, storing and maintaining data differs between organizations, which makes it difficult and inefficient when sharing. This lack of data centralization leads to high administrative costs and incorrect documentation, which affects the doctor’s ability to accurately diagnose patients and make effective treatment decisions. <br><br>
+            We provide a streamlined process for collecting, storing, maintaining, and analyzing medical records. Using our healthcare analytics platform, medical staff have the capability to receive the insights needed to make crucial life saving decisions in near real time. Our approach enables automated disease diagnosis to save doctors time, lower costs, increase accuracy, and provide more effective healthcare decisions.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div id="bi" class="row stretched toggled">
+    <div class="eight wide column right aligned">
+        <div> <img class="mobile-img" src="images/Industries/bi banner.jpg"></div>
+        <div> <img class="web-img" src='images/Industries/BI.jpeg'></div>
+    </div>
+
+    <div class="column">
+      <div class="ui doubling centered raised card">
+         <div class="content">
+          <div class="header"> <p>Helping businesses improve decision making and drive growth</p></div>
+          <div class="description">
+            <p>Many organizations are using outdated analytics methods to understand internal and external driving forces. The lack of accurate information leads to decision making which could negatively affect the financial and competitive standing of the organization. Many companies either use legacy software which hinders their capabilities or have limited access to the advanced methods needed collect, organize and understand important data for growth. <br><br>
+            The solutions we provide allow our clients to realize their full potential through the use of data driven decisions. Our clients have the ability to utilize the most advanced analytics tools to improve their understanding of market and internal data. This enables them to improve their bottom line and choose optimal courses of action in order effectively compete and grow.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="retail" class="row stretched toggled">
+    <div class="eight wide column right aligned">
+        <div> <img class="mobile-img" src="images/Industries/retail banner.jpg"></div>
+        <div> <img class="web-img" src='images/Industries/retail.jpg'></div>
+    </div>
+
+    <div class="column">
+      <div class="ui doubling centered raised card">
+         <div class="content">
+          <div class="header"> <p>Creating intelligent inventory management and sales systems</p></div>
+          <div class="description">
+            <p>Retail companies struggle constantly to detect fraud, manage inventory and increase sales conversions.  Their customers expect a continuously improving experience, more personalized than ever.  Attaining these goals while maximizing profit margins, identifying trends and growing sales is impossible without proper data management. <br><br>
+            Our products are tools that optimize analytics and increase automation across the board; lowering costs, personalized user experience and detecting fraud.   Savings are provided from customer service through automated chatbots and anomaly detection.  Vertex offers the most effective data tools to make the best decisions for your company’s growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="ui row capabilities-cta">
+    <a href="Capabilities.PDF" target="_blank">
+      <button class="ui green button huge">Full Capabilities</button>
+    </a>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="resources">
+ 
+<div class="center aligned ui equal width grid stackable">
+
+  <div class="row stretched">
+    <div class="eight wide column centered google-web">
+        <div id="map-web"></div>
+    </div>
+
+
+    <div class="eight wide column centered contact">
+      <div class="ui equal width grid stackable">
+          <div class="row">
+            <div class="column four wide header"><h4>Contact Us</h4></div>
+          </div>
+
+          <div class="row">
+            <div class="column three wide left aligned get-quote"> <p>Interested in learning more about how vertex can help your organization optimize and innovate?
+              Call or email us today! <br><br>
+              Whether you are searching for cutting edge technology, plug and play solutions, process automation, or database pipeline optimization, Vertex has a solution for you! <br><br>
+              For an immediate quote, click the "get a quote" button below and we will provide a quote within 24 hours.</p>
+
+                <a href="forms/Quote.html">
+                  <button class="ui green button huge">Get a Quote</button>
+                </a>
+            </div>
+            <div class="column three wide left aligned contact-info">
+              <p>
+                <b>Hours of Operation:</b><br>
+                Monday - Friday<br>
+                7:00am - 10:00pm EST<br><br>
+                Saturday & Sunday<br>
+                9am - 7pm EST<br><br>
+                <b>Address:</b><br>
+                4100 Powelton Ave<br>
+                Philadelphia PA, 19104<br><br>
+                <b>Phone:</b><br>
+                215-317-5110<br><br>
+                <b>Email:</b><br>
+                Support@VertexLabs.info
+              </p>
+
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <div class="eight wide column centered google-mobile">
+      <div id="map-mobile"></div>
+    </div>
+  </div>
+
+
+
+
+  <div class="row sponsors">
+    <div class="column centered">
+        <img class="logo-large" src="images/Bizspark.png"> 
+    </div>
+    <div class="column">
+        <img class="logo-large" src="images/IBM.png"> 
+    </div>
+    <div class="column">
+        <img class="logo-large" src="images/Inception.jpg"> 
+    </div>
+    <div class="column">
+        <img class="logo-large" src="images/aws.png"> 
+    </div>
+    <div class="column">
+        <img class="logo-large" src="images/Microsoft.jpg"> 
+    </div>
+    
+  </div>
+
+
 </div>
 
-<!-- Sidebar Menu -->
-<div class="ui vertical inverted sidebar menu">
-    <a href="#" class="active item">Home</a>
-    <a href="#about" class="item">About</a>
-    <a href="#clients" class="item">Clients</a>
-    <a href="#consulting" class="item">Consulting</a>
-    <a href="https://www.instagram.com/vertexlabs_/" class="item "><i class="instagram icon"></i></a>
-    <a href="https://angel.co/vertex-laboratories/jobs" class="item">Jobs</a>
-</div>
-
-
-<!-- Page Contents -->
-<div class="pusher">
-	<div class="ui inverted vertical masthead center aligned segment">
-
-		<div class="ui container">
-			<div class="ui large secondary inverted pointing menu">
-				<a class="toc item">
-					<i class="sidebar icon"></i>
-				</a>
-                <a href="#" class="active item">Home</a>
-                <a href="#about" class="item">About</a>
-                <a href="#clients" class="item">Clients</a>
-                <a href="#consulting" class="item">Consulting</a>
-                <a href="https://www.instagram.com/vertexlabs_/" class="item right"><i class="instagram icon"></i></a>
-                    <a href="https://angel.co/vertex-laboratories/jobs" class="item">Jobs</a>
-            </div>
-		</div>
-
-		<div class="ui text container">
-			<h1 class="ui inverted header">
-				Vertex Laboratories
-			</h1>
-            <h2>
-                <span class="intro"></span>
-            </h2>
-		</div>
-	</div>
-
-
-	<div id="about" class="ui vertical stripe segment">
-		<div class="ui middle aligned stackable grid container">
-			<div class="row">
-				<div class="eight wide column wow bounceInLeft">
-					<h3 class="ui header">About Vertex</h3>
-					<p>The best business decisions come from meticulous data analysis, but making decisions from data is difficult and time consuming. Whether it is papers, spreadsheets, databases, or even automated systems, it is becoming increasingly difficult to answer the questions that matter without wasting precious time and money.
-                    <br>
-                    <br>
-                    Utilizing advanced machine learning and deep learning technology, the engineers at Vertex Labs are able to automate, predict, and analyze data so you can finally focus on the projects and decisions that matter.</p>
-				</div>
-				<div class="six wide right floated center aligned column wow bounceInRight">
-					<img src="images/data.jpg" class="ui large rounded image">
-                </div>
-			</div>
-		</div>
-	</div>
-
-
-    <div id="clients" class="ui vertical stripe inverted centered segment">
-        <div class="ui middle aligned stackable grid inverted container">
-            <div class="row">
-                <div class="five wide column wow bounceInLeft">
-                    <img class="ui large rounded image" src="images/laptop2.svg">
-                </div>
-                <div class="nine wide right floated column">
-                    <h3 class="ui inverted header">Recent Clients</h3>
-                    
-
-
-<!-- CARDS -->
-                    <div class="ui link cards">
-
-
-
-
-
-                        <a href="http://www.saia.biz/" class="card wow flipInX"  data-wow-delay=".5s">
-                            <div class="content">
-                                <div class="header">Saia</div>
-                                <div class="meta">
-                                    <span class="right floated time">August 2017</span>
-                                    <span class="category">Strategic Partnership</span>
-                                </div>
-                            </div>
-
-                            <div class="content">
-                                <div class="ui small feed">
-                                    <div class="event">
-                                        <div class="content">
-                                            <div class="summary">
-                                                Distribute and license Artificial Intelligence Systems for clients in Europe and South America
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="event">
-                                        <div class="content">
-                                            <div class="summary">
-                                                Design customized advanced video, audio, and image recognition algorithms for security and defense
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="event">
-                                        <div class="content">
-                                            <div class="summary">
-                                                Service B2B relations in North America
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-
-                        <a href="https://www.brainyloft.com/" class="card wow flipInX"  data-wow-delay="1s">
-                            <div class="content">
-                                <div class="header">Brainyloft</div>
-                                <div class="meta">
-                                    <span class="right floated time">May 2017</span>
-                                    <span class="category">AI Consulting</span>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <div class="ui small feed">
-                                    <div class="event">
-                                        <div class="content">
-                                            <div class="summary">
-                                                Design and Implement custom Machine Learning and Image recognition for digital marketing and advertising
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="event">
-                                        <div class="content">
-                                            <div class="summary">
-                                                Develop dynamic intelligent e-commerce pipelines
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="event">
-                                        <div class="content">
-                                            <div class="summary">
-                                                Applying deep learning to immersive user experience platforms
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+</section>
 
 
 
@@ -364,179 +521,417 @@
 
 
 
+  <!-- ########## FOOTER BEGIN ########## -->
+  <section id="footer">
+    <div class="container">
+      <ul>
+        <!--       <li class="email">
+        <a href="http://google.com/+">
+          <i class="fa fa-google-plus"></i>
+          <p >
+              G+
+          </p>
+        </a>
+      </li> -->
+
+
+        <li class="linkedin">
+          <a href="https://www.linkedin.com/company/10988577/" target="_blank"><i class="fa fa-linkedin"></i>
+
+          <p>Linkedin</p></a>
+        </li>
+
+
+        <li class="github">
+          <a href="https://github.com/Vertex-Laboratories/" target="_blank"><i class="fa fa-github"></i>
+
+          <p>GitHub</p></a>
+        </li>
+
+      <li class="instagram">
+        <a href="https://www.instagram.com/vertexlabs_/" target="_blank">
+          <i class="fa fa-instagram"></i>
+          <p>Instagram</p>
+        </a>
+      </li>
 
 
 
-                        <a href="http://www.prjct1.org/" class="card wow flipInX"  data-wow-delay=".25s">
-                            <div class="content">
-                                <div class="header">Project One</div>
-                                <div class="meta">
-                                    <span class="right floated time">December 2016</span>
-                                    <span class="category">Edtech</span>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <div class="ui small feed">
-                                    <div class="event">
-                                        <div class="content">
-                                            <div class="summary">
-                                                Uses artificial intelligence to level the playing field of undergraduate education
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="event">
-                                        <div class="content">
-                                            <div class="summary">
-                                                Algorithms adapt to students, realizing patterns in their learning habits like a real-life teacher might
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="event">
-                                        <div class="content">
-                                            <div class="summary">
-                                                SBIR grant pending
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+              <li class="twitter">
+        <a href="https://twitter.com/vertexlabs_" target="_blank">
+          <i class="fa fa-twitter"></i>
+          <p>Twitter</p>
+        </a>
+      </li>
 
 
+        <li class="facebook">
+          <a href="https://www.facebook.com/vertexlaboratories/" target="_blank"><i class="fa fa-facebook"></i>
 
-                        <a href="http://www.oratio.ai/" class="card wow flipInX"  data-wow-delay=".75s">
-                            <div class="content">
-                                <div class="header">Orai</div>
-                                <div class="meta">
-                                    <span class="right floated time">December 2016</span>
-                                    <span class="category">Audio Processing</span>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <div class="ui small feed">
-                                    <div class="event">
-                                        <div class="content">
-                                            <div class="summary">
-                                                Developed custom voice activation detection algorithms
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="event">
-                                        <div class="content">
-                                            <div class="summary">
-                                                Modeled filler word detection with raw audio signals of natural speech
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="event">
-                                        <div class="content">
-                                            <div class="summary">
-                                                Provided custom image recognition solutions for smile intensity detection
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+          <p>Facebook</p></a>
+        </li>
+      </ul>
 
 
+      <div class="license">
+<!--         <ul>  
+          <li><a href="www.google.com">Terms and Conditions</a></li>
+          <li><a href="www.google.com">User Agreements</a></li>
+          <li><a href="www.google.com">Other Things</a></li>
+        </ul> -->
 
-                    </div>
-<!-- END CARDS -->                
-
-                </div>
-            </div>
-        </div>
+        2018 Vertex Laboratories<br>
+      </div>
     </div>
+  </section>
 
 
 
-    <div id="consulting" class="ui vertical stripe segment">
-        <div class="ui middle aligned stackable grid container">
-            <div class="row">
-                <div class="eight wide column wow bounceInLeft">
-                    <h3 class="ui header">Consulting</h3>
-                    <p>At Vertex, we do more than just research; we provide innovative solutions to businesses of all shapes and sizes. We work closely with our clients to design and implement platforms that provide efficient and effective results. If you are looking for business services in fields such as computer science, machine learning, deep learning, data science, engineering, marketing, mathematics, or artificial intelligence, then contact us today and let us help!</p>
-                </div>
-                <div class="six wide right floated center aligned column wow bounceInRight">
-                    <img src="images/robot.gif" class="ui large rounded image">
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div id="sponsors" class="ui vertical stripe inverted centered segment">
 
-        <div class="ui middle aligned stackable grid container">
-            <div class="row">
-                <div class="eight wide column wow bounceInLeft">
-                    <h3 class="ui inverted header">Our Sponsors</h3>
-                </div>
-            </div>
-        </div>
-        
-        <div class="ui middle aligned centered five column stackable grid inverted container">
-            <div class="column">
-                <img class="ui inverted medium rounded image" src="images/Microsoft.jpg">
-            </div>
-            <div class="column">
-                <img class="ui inverted medium rounded image" src="images/Inception.jpg">
-            </div>
-            <div class="column">
-                <img class="ui inverted medium rounded image" src="images/Bizspark.png">
-            </div>
-            <div class="column">
-                <img class="ui inverted medium rounded image" src="images/IBM.PNG">
-            </div>
-            </div>
-        </div>
-    </div>
+  <script>
+     $(function(){
+         $(".typed").typed({
+           strings: ["Scalable..", "Accurate..", "Fast..", "Insightful..", "the Best.."],
+           typeSpeed: 0,
+         // time before typing starts
+       startDelay: 2,
+       // backspacing speed
+       backSpeed: 0,
+       // time before backspacing
+       backDelay: 1500,
+       // loop
+       loop: true,
+       // false = infinite
+       loopCount: false,
+       // show cursor
+       showCursor: true,
+       // character for cursor
+       cursorChar: "|",
 
-	<div class="ui inverted vertical footer segment">
-		<div class="ui container">
-			<div class="ui stackable inverted divided equal height stackable grid">
-				<div class="three wide column">
-					<h4 class="ui inverted header">Contact Us</h4>
-					<div class="ui inverted link list">
-						<a href="mailto:DavidJ@vertexlabs.info" class="item">Email</a>
-						<a href="https://instagram.com/vertexlabs_/" class="item">Instagram</a>
-						<a href="https://www.linkedin.com/company/vertex-laboratories" class="item">LinkedIn</a>
-                        <a href="https://angel.co/vertex-laboratories" class="item">Angel</a>
-					</div>
-				</div>
-				<div class="three wide column">
-					<h4 class="ui inverted header">Affiliations</h4>
-					<div class="ui inverted link list">
-                        <a href="www.holdmyramen.com" class="item">Affiliated Blog</a>
-                        <a href="https://github.com/Djuboor/Djuboor.github.io" class="item">Source available here</a>
-                    </div>
-				</div>
-				<div class="seven wide column">
-					<h4 class="ui inverted header">Out of SF & Philly</h4>
-                    <div class="ui inverted link list">
-                        <a href="https://semantic-ui.com" class="item">Libraries Used: Semantic-UI, annimate.css, Typed.js, WOW.js</a>
-                    </div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+         });
+     });
+  </script> 
+ 
 
-<script>
-    $(function(){
-        new WOW().init();
-    });
+
+  <script type="text/javascript">
+  function showonlyone(thechosenone) {
+       $('.toggled').each(function(index) {
+            if ($(this).attr("id") == thechosenone) {
+                 $(this).show(0).css('display','flex');
+            }
+            else {
+                 $(this).hide(0);
+            }
+       });
+  }
+  </script>
+
+
+  <script type="text/javascript">
+
+  $('#horizontal-list').on('click','a', function(){
+     $(this).addClass('active').siblings().removeClass('active');
+  });
+
+   $('#horizontal-list').on('click','li', function(){
+     $(this).siblings().children('a').removeClass('active');
+  });
+  </script>
+
+
+
+
+
+<script type="text/javascript">
+function initMap() {
+
+        // Create a new StyledMapType object, passing it an array of styles,
+        // and the name to be displayed on the map type control.
+        var styledMapType = new google.maps.StyledMapType(
+            [
+  {
+    "featureType": "administrative.land_parcel",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.neighborhood",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.business",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  }
+],
+            {name: 'Vertex Map'});
+
+        // Create a map object, and include the MapTypeId to add
+        // to the map type control.
+
+        var vertex = {lat: 39.958703, lng: -75.205313};
+        var mapOptions = {
+          center: vertex,
+          zoom: 12,
+          mapTypeControlOptions: {
+            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+                    'styled_map']
+          }
+        }
+
+        var map = new google.maps.Map(document.getElementById('map-web'), mapOptions);
+
+        var map2 = new google.maps.Map(document.getElementById('map-mobile'), mapOptions);
+
+
+
+        //Associate the styled map with the MapTypeId and set it to display.
+        map.mapTypes.set('styled_map', styledMapType);
+        map.setMapTypeId('styled_map');
+
+
+        //Add marker
+        var marker = new google.maps.Marker({
+          position: vertex,
+          map: map,
+          title: "Vertex Labs",
+          icon: "images/icon.PNG",
+          size: new google.maps.Size(10, 15),
+          url: 'www.google.com'
+        });
+
+        //aaaand for Web
+        map2.mapTypes.set('styled_map', styledMapType);
+        map2.setMapTypeId('styled_map');
+
+
+        //Add marker
+        var marker = new google.maps.Marker({
+          position: vertex,
+          map: map2,
+          title: "Vertex Labs",
+          icon: "images/icon.PNG",
+          size: new google.maps.Size(10, 15)
+        });
+
+
+        map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker.getPosition());
+          }, 2000);
+        });
+
+      }
 </script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq6-RIYIfzz-RldY5c5zxqvrtvf9BtwJM&callback=initMap"
+  type="text/javascript"></script>
 
+
+
+  <script type="text/javascript">
+   /* ---- particles.js config ---- */
+
+
+
+  particlesJS("particles-js", {
+   "particles": {
+     "number": {
+       "value": 80,
+       "density": {
+         "enable": true,
+         "value_area": 800
+       }
+     },
+     "color": {
+       "value": "#4e4e4f",
+     },
+     "shape": {
+       "type": "circle",
+       "stroke": {
+         "width": 2,
+         "color": "#4e4e4f"
+       },
+       "polygon": {
+         "nb_sides": 5
+       },
+       "image": {
+         "src": "img/github.svg",
+         "width": 100,
+         "height": 100
+       }
+     },
+     "opacity": {
+       "value": 0.3,
+       "random": false,
+       "anim": {
+         "enable": false,
+         "speed": 1,
+         "opacity_min": 0.1,
+         "sync": false
+       }
+     },
+     "size": {
+       "value": 3,
+       "random": true,
+       "anim": {
+         "enable": false,
+         "speed": 40,
+         "size_min": 0.1,
+         "sync": false
+       }
+     },
+     "line_linked": {
+       "enable": true,
+       "distance": 150,
+       "color": "#4e4e4f",
+       "opacity": 0.2,
+       "width": 1
+     },
+     "move": {
+       "enable": true,
+       "speed": 6,
+       "direction": "none",
+       "random": false,
+       "straight": false,
+       "out_mode": "out",
+       "bounce": false,
+       "attract": {
+         "enable": false,
+         "rotateX": 600,
+         "rotateY": 1200
+       }
+     }
+   },
+   "interactivity": {
+     "detect_on": "canvas",
+     "events": {
+       "onhover": {
+         "enable": true,
+         "mode": "grab"
+       },
+       "onclick": {
+         "enable": true,
+         "mode": "push"
+       },
+       "resize": true
+     },
+     "modes": {
+       "grab": {
+         "distance": 140,
+         "line_linked": {
+           "opacity": 1
+         }
+       },
+       "bubble": {
+         "distance": 400,
+         "size": 40,
+         "duration": 2,
+         "opacity": 8,
+         "speed": 3
+       },
+       "repulse": {
+         "distance": 200,
+         "duration": 0.4
+       },
+       "push": {
+         "particles_nb": 4
+       },
+       "remove": {
+         "particles_nb": 2
+       }
+     }
+   },
+   "retina_detect": true
+  });
+  </script>
 </body>
 
-<script>
-    $(function(){
-        $(".intro").typed({
-            strings: ["DATA SCIENCE", "SOFTWARE + HARDWARE AUTOMATION", "DEEP LEARNING RESEARCH", "DATA + AUTOMATION + RESEARCH"],
-            typeSpeed: 1
-        });
-    });
-</script>
+
+
+
 
 </html>
