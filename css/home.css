@@ -75,13 +75,11 @@
 #industries .mobile-img {width: 95vw; max-height: 500px; margin-bottom: -13px; margin-top: -40px; display:flex; padding-right: 5px }
 
 #industries .grid .column {overflow: hidden !important  ;}
-#industries .card {overflow-y: scroll !important; margin-bottom: 40px; margin-left: -5px; margin-right: -28px !important; width: 40vw !important; height: 40vh; border-radius: 0px !important; box-shadow: 5px 3px 3px lightgrey; border: 0.75px solid lightgrey !important;}
+#industries .card {overflow-y: scroll !important; overflow-x: hidden; margin-bottom: 40px; margin-right: -28px !important; padding-right: 28px !important; width: calc(40vw + 28px) !important; height: 40vh; border-radius: 0px !important; box-shadow: 5px 3px 3px lightgrey; border: 0.75px solid lightgrey !important;}
 #industries .card .header {border-bottom: 1px solid rgba(0,0,0,0.25) !important; padding-bottom: 10px !important;}
 #industries .card .header p {padding-top: 8px; font-size: calc(10px + .75vw); font-weight: normal !important }
 #industries .card .description p {padding-top:  10px; font-size: calc(8px + .65vw); font-weight: normal !important;}
 #industries .capabilities-cta .button {display: inline-block; font-size: calc(16px + .25vw) !important; letter-spacing: 1.75px}
-
-
 
 
 #resources { overflow: hidden; color: #4e4e4f; width: 100vw; background-color: white; display:flex; justify-content: center; align-content: center; padding-left: 35px; padding-right: 35px;}
@@ -102,12 +100,6 @@
 #resources .contact .contact-info {width: 20vw !important;}
 #resources .sponsors .column {padding-right: 25px; padding-left: 25px;}
 #resources .sponsors {margin-top: 50px; height: 150px}
-
-
-/*#resources .google-web {background: black;}
-*/
-
-
 
 
 
