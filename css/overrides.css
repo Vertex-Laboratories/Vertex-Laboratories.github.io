@@ -64,10 +64,11 @@
 
 
   #industries .web-img {display: none !important}
-  #industries .card {width: 95vw !important; height: auto; box-shadow: 4px 2px 2px lightgrey; margin-top: auto; margin-bottom: auto; overflow: hidden}
+  #industries .card {width: 95vw !important; height: auto; box-shadow: 4px 2px 2px lightgrey; margin: auto !important; overflow: hidden}
   #industries .card .header p {font-size: 18px}
   #industries .card .description p {font-size: 14px; padding-top: 20px}
   #industries .button {margin-top:  25px;}
+  #industries .card {overflow: hidden; margin-bottom: 40px; margin-right: 0px !important; padding-right: 28px !important;}
 
 
   
