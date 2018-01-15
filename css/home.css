@@ -93,10 +93,10 @@
 
 #resources .contact .grid {padding: 30px 5px 30px 5px !important;  overflow-y: scroll; margin-right: -28px !important;}
 #resources .contact .header {width: 40vw !important; margin-left: -5px !important; max-height: 30px; margin-top: -15px}
-#resources .contact .header h4 {padding-bottom: 17px !important; text-transform: none; }
-#resources .contact .get-quote {width: 20vw !important; margin-left: 17px !important;}
-#resources .contact .get-quote p {font-size: calc( 6px + 0.45vw) !important;}
-#resources .contact .contact-info p {font-size: calc( 6px + 0.45vw) !important; padding-left: 20px;}
+#resources .contact .header h4 {padding-bottom: 13px !important; text-transform: none; }
+#resources .contact .get-quote {width: 20vw !important; margin-left: 13px !important;}
+#resources .contact .get-quote p {font-size: calc( 6px + 0.37vw) !important;}
+#resources .contact .contact-info p {font-size: calc( 6px + 0.37vw) !important; padding-left: 20px;}
 #resources .contact .contact-info {width: 20vw !important;}
 #resources .sponsors .column {padding-right: 25px; padding-left: 25px;}
 #resources .sponsors {margin-top: 50px; height: 150px}
