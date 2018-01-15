@@ -73,10 +73,12 @@
 #pharm {display: flex;} #health {display: none;} #bi {display: none;} #retail {display: none;}
 #industries .web-img {margin-top: -40px !important; margin-bottom: 40px; object-fit: cover; background-size: fill; position: relative; max-width: 40vw; text-align: right !important; height: 50vh; background: black; overflow: hidden !important; box-shadow: 5px 3px 3px lightgrey;}
 #industries .mobile-img {width: 95vw; max-height: 500px; margin-bottom: -13px; margin-top: -40px; display:flex; padding-right: 5px }
-#industries .card {margin-top: -40px; margin-bottom: 40px; margin-left: -5px; width: 40vw !important; height: 40vh; overflow: hidden; border-radius: 0px !important; box-shadow: 5px 3px 3px lightgrey; border: 0.75px solid lightgrey !important;}
-#industries .card .header {border-bottom: 1px solid rgba(0,0,0,0.25) !important; padding-bottom: 10px !important}
+
+#industries .grid .column {overflow: hidden !important  ;}
+#industries .card {overflow-y: scroll !important; margin-bottom: 40px; margin-left: -5px; margin-right: -28px !important; width: 40vw !important; height: 40vh; border-radius: 0px !important; box-shadow: 5px 3px 3px lightgrey; border: 0.75px solid lightgrey !important;}
+#industries .card .header {border-bottom: 1px solid rgba(0,0,0,0.25) !important; padding-bottom: 10px !important;}
 #industries .card .header p {padding-top: 8px; font-size: calc(10px + .75vw); font-weight: normal !important }
-#industries .card .description p {padding-top:  10px; font-size: calc(8px + .65vw); font-weight: normal !important }
+#industries .card .description p {padding-top:  10px; font-size: calc(8px + .65vw); font-weight: normal !important;}
 #industries .capabilities-cta .button {display: inline-block; font-size: calc(16px + .25vw) !important; letter-spacing: 1.75px}
 
 
@@ -87,8 +89,10 @@
 #resources .grid .row .column .segment {padding-top:  -10px !important;}
 #resources .google-web {height: 40vh; width: 40vw !important;}
 #resources .google-mobile {height: 30vh; margin-top: 20px !important }
+
+
 #resources .contact {overflow: hidden; height: 40vh; width: 40vw !important; background: white; box-shadow: 4px 2px 2px lightgrey !important; border: 0.75px solid lightgrey;}
-#resources .sponsors {margin-top: 50px; height: 150px}
+
 #resources .contact .grid {padding: 30px 5px 30px 5px !important;  overflow-y: scroll; margin-right: -28px !important;}
 #resources .contact .header {width: 40vw !important; margin-left: -5px !important; max-height: 30px; margin-top: -15px}
 #resources .contact .header h4 {padding-bottom: 17px !important; text-transform: none; }
@@ -97,6 +101,7 @@
 #resources .contact .contact-info p {font-size: calc( 6px + 0.45vw) !important; padding-left: 20px;}
 #resources .contact .contact-info {width: 20vw !important;}
 #resources .sponsors .column {padding-right: 25px; padding-left: 25px;}
+#resources .sponsors {margin-top: 50px; height: 150px}
 
 
 /*#resources .google-web {background: black;}
