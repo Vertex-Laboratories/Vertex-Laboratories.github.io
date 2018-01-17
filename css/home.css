@@ -29,7 +29,7 @@
 
 #services-1 { color: #4e4e4f; width: 100vw; background-color: #F5F7FA; display:flex; justify-content: center; align-content: center; padding-left: 35px; padding-right: 35px;}
 #services-1 .grid .slogan-1 .column h1 {white-space: nowrap; text-transform: none !important; font-size: calc(18px + 1vw); margin-bottom: -15vh; }
-#services-1 .grid { width: 100vw;/* height: 50vh;*/ padding-top: 19vh;}
+#services-1 .grid { width: 100vw;/* height: 50vh;*/ padding-top: 12vh;}
 #services-1 .grid .row .column .card {min-height: 50vh !important;}
 #services-1 .grid .row .column .segment {padding-top:  -10px !important;}
 #services-1 .grid .row .column .text-box .heading { letter-spacing: calc(2px + 0.05vw); font-family: 'PT Sans'; color: #53A89E; font-size: calc(26px + 20%); font-weight: 800;}
